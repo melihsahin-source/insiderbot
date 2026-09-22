@@ -1,0 +1,20 @@
+{
+  "insider": {
+    "min_value_usd": 1000000,
+    "cluster_days": 14,
+    "cluster_min_insiders": 3,
+    "cluster_min_value_usd": 100000,
+    "max_pages": 10
+  },
+  "watchlist_lookback_days": 30,
+  "watchlist_forms": [
+    "13F-HR", "13F-HR/A",
+    "SC 13D", "SC 13D/A", "SC 13G", "SC 13G/A",
+    "SCHEDULE 13D", "SCHEDULE 13D/A", "SCHEDULE 13G", "SCHEDULE 13G/A",
+    "4"
+  ],
+  "watchlist": [
+    {"name": "Warren Buffett (Berkshire Hathaway)", "cik": 1067983},
+    {"name": "Bill Ackman (Pershing Square)", "cik": 1336528}
+  ]
+}
