@@ -71,6 +71,35 @@ def notify(text):
     time.sleep(1)  # Telegram hız sınırı
 
 
+def current_price(ticker):
+    """Hissenin güncel (birkaç dakika gecikmeli) fiyatı; alınamazsa None."""
+    try:
+        import yfinance as yf
+        t = yf.Ticker(ticker.replace(".", "-"))
+        p = getattr(t.fast_info, "last_price", None)
+        if not p or p != p:
+            p = t.history(period="5d")["Close"].iloc[-1]
+        return float(p)
+    except Exception as ex:
+        print(f"{ticker} fiyatı alınamadı: {ex}", file=sys.stderr)
+        return None
+
+
+def days_ago(iso):
+    try:
+        n = (date.today() - date.fromisoformat(iso)).days
+    except ValueError:
+        return ""
+    return " (bugün)" if n <= 0 else f" ({n} gün önce)"
+
+
+def price_line(ticker, ref_price, ref_label):
+    p = current_price(ticker)
+    if p is None or not ref_price:
+        return ""
+    return f"\nGüncel fiyat: <b>${p:,.2f}</b> ({ref_label} bu yana {(p / ref_price - 1) * 100:+.1f}%)"
+
+
 def esc(s):
     return html.escape(s or "")
 
@@ -213,15 +242,17 @@ def run_form4(state):
 
         tk = buy["ticker"]
         if buy["value"] >= cfg["min_value_usd"]:
-            notify(
+            msg = (
                 f"🟢 <b>Yönetici alımı: {esc(tk)}</b>\n"
                 f"{esc(buy['issuer'])}\n"
                 f"Alan: {esc(buy['owner'])} ({esc(buy['roles'])})\n"
                 f"Tutar: <b>{money(buy['value'])}</b> "
                 f"({buy['shares']:,.0f} hisse, ort. ${buy['avg_price']:,.2f})\n"
-                f"İşlem tarihi: {', '.join(buy['dates'])}\n"
+                f"İşlem tarihi: {', '.join(buy['dates'])}{days_ago(max(buy['dates'], default=''))}"
+                f"{price_line(tk, buy['avg_price'], 'yönetici alımından')}\n"
                 f'<a href="{href}">SEC bildirimi</a>'
             )
+            notify(msg)
 
         if buy["value"] >= cfg["cluster_min_value_usd"]:
             before = {b["owner"] for b in recent if b["ticker"] == tk}
@@ -231,12 +262,14 @@ def run_form4(state):
                 group = [b for b in recent if b["ticker"] == tk]
                 lines = "\n".join(f"• {esc(b['owner'])}: {money(b['value'])}" for b in group)
                 total = sum(b["value"] for b in group)
-                notify(
+                msg = (
                     f"🔥 <b>Küme alım: {esc(tk)}</b>\n"
                     f"Son {cfg['cluster_days']} günde {len(before) + 1} farklı içeriden kişi "
-                    f"alım yaptı (toplam {money(total)}):\n{lines}\n"
+                    f"alım yaptı (toplam {money(total)}):\n{lines}"
+                    f"{price_line(tk, buy['avg_price'], 'son alımdan')}\n"
                     f'<a href="{href}">Son bildirim</a>'
                 )
+                notify(msg)
 
     state["seen_form4"] = seen_list[-6000:]
     state["recent_buys"] = recent
