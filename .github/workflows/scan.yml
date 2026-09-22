@@ -2,13 +2,15 @@ name: sp500-scan
 
 on:
   schedule:
-    - cron: "15,45 13-21 * * 1-5"   # hafta içi, ABD seansı civarı (UTC)
+    - cron: "15,45 13-21 * * 1-5"   # gün içi tarama + gün sonu özeti (UTC)
+    - cron: "0 6 * * 2-6"           # 09:00 İstanbul: kapanış sonrası raporu
+    - cron: "0 13 * * 1-5"          # 16:00 İstanbul: açılış öncesi raporu
   workflow_dispatch:
     inputs:
       mode:
         description: "Çalışma modu"
         type: choice
-        options: [auto, test, intraday, eod]
+        options: [auto, test, intraday, eod, afterhours, premarket]
         default: auto
 
 permissions:
@@ -33,7 +35,18 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python scanner.py ${{ inputs.mode || 'auto' }}
+        run: |
+          MODE="${{ inputs.mode }}"
+          if [ -z "$MODE" ]; then
+            case "${{ github.event.schedule }}" in
+              "0 6 * * 2-6")  MODE=afterhours ;;
+              "0 13 * * 1-5") MODE=premarket ;;
+              *)              MODE=auto ;;
+            esac
+          elif [ "$MODE" = "afterhours" ] || [ "$MODE" = "premarket" ]; then
+            MODE="$MODE-now"   # elle çalıştırmada her zaman rapor üret
+          fi
+          python scanner.py "$MODE"
       - name: Durumu kaydet
         if: ${{ inputs.mode != 'test' }}
         run: |
