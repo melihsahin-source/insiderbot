@@ -8,11 +8,14 @@ Gün içi (ABD borsası açıkken, 30 dk'da bir):
   Her hisse için günde en fazla 1 bildirim.
 
 Gün sonu (kapanıştan sonra, tek özet mesaj, sessiz bildirim):
-  - Golden / death cross, RSI aşırı alım-satım, hacimli 52H zirve kapanışı,
-    olağandışı hacim, son 14 günde yönetici alımı (insider bot'tan)
-  Sinyaller puanlanır, en güçlü 10 tanesi gönderilir.
+  Sade dille üç grup: alım ilgisi olanlar, sert düşüş sonrası tepki adayları,
+  satış baskısı olanlar.
 
-Kullanım: python scanner.py [auto|test|intraday|eod]
+Seans dışı raporlar:
+  - Sabah 09:00 (İstanbul): dün akşam kapanış sonrası en çok hareket edenler
+  - 16:00 (İstanbul): açılış öncesi en çok hareket edenler
+
+Kullanım: python scanner.py [auto|test|intraday|eod|afterhours|premarket]
 """
 import html
 import io
@@ -37,7 +40,10 @@ SETTINGS = {
     "rsi_low": 30,
     "rsi_high": 70,
     "min_score": 2,               # gün sonu özete girmek için gereken puan
-    "eod_max": 10,                # gün sonu özetteki en fazla hisse
+    "eod_group_max": 5,           # gün sonu özetinde her gruptaki en fazla hisse
+    "ext_move_pct": 3.0,          # seans dışı raporlar için hareket eşiği (%)
+    "ext_min_dollar": 1_000_000,  # seans dışı işlem hacmi alt sınırı ($)
+    "ext_max": 8,                 # seans dışı raporda yön başına en fazla hisse
     "intraday_max": 15,           # gün içi mesajdaki en fazla satır
 }
 # ---------------------------------------------------------------------------
@@ -221,6 +227,14 @@ def run_intraday(state, sp, forced):
 
 
 # ---------------------------------------------------------------- gün sonu
+TR_MONTHS = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz",
+             "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
+
+
+def tr_date(d):
+    return f"{d.day} {TR_MONTHS[d.month - 1]}"
+
+
 def run_eod(state, sp, forced):
     names = dict(sp)
     today = datetime.now(NY).date()
@@ -234,7 +248,7 @@ def run_eod(state, sp, forced):
 
     insiders = insider_tickers()
     S = SETTINGS
-    results = []
+    groups = {"bull": [], "rebound": [], "bear": []}
     for t, d in data.items():
         if len(d) < 260:
             continue
@@ -243,40 +257,200 @@ def run_eod(state, sp, forced):
         chg = (c.iloc[-1] / c.iloc[-2] - 1) * 100
         avg_vol = v.iloc[-21:-1].mean()
         volx = v.iloc[-1] / avg_vol if avg_vol > 0 else 0
-        sig, score = [], 0
+        notes, bull, bear, oversold = [], 0, 0, False
 
         if s50.iloc[-2] <= s200.iloc[-2] and s50.iloc[-1] > s200.iloc[-1]:
-            sig.append("🟢 Golden cross"); score += 2
+            bull += 2
+            notes.append("Kısa vadeli trendi uzun vadeli trendini yukarı kesti (golden cross), yükseliş trendi güçleniyor.")
         if s50.iloc[-2] >= s200.iloc[-2] and s50.iloc[-1] < s200.iloc[-1]:
-            sig.append("🔴 Death cross"); score += 2
-        if r.iloc[-2] >= S["rsi_low"] and r.iloc[-1] < S["rsi_low"]:
-            sig.append(f"RSI aşırı satım ({r.iloc[-1]:.0f})"); score += 1
-        if r.iloc[-2] <= S["rsi_high"] and r.iloc[-1] > S["rsi_high"]:
-            sig.append(f"RSI aşırı alım ({r.iloc[-1]:.0f})"); score += 1
-        if c.iloc[-1] > c.iloc[-253:-1].max() and volx >= S["eod_breakout_volume_x"]:
-            sig.append(f"🚀 52H zirve kapanışı (hacim {volx:.1f}x)"); score += 2
+            bear += 2
+            notes.append("Kısa vadeli trendi uzun vadeli trendinin altına indi (death cross), trend zayıflıyor.")
+
+        hi, lo = c.iloc[-253:-1].max(), c.iloc[-253:-1].min()
+        if c.iloc[-1] > hi and volx >= S["eod_breakout_volume_x"]:
+            bull += 2
+            notes.append(f"Normalin {volx:.1f} katı hacimle yılın en yüksek seviyesinde kapandı, güçlü alım ilgisi var.")
+        elif c.iloc[-1] < lo and volx >= S["eod_breakout_volume_x"]:
+            bear += 2
+            notes.append(f"Normalin {volx:.1f} katı hacimle yılın en düşük seviyesinde kapandı, satış baskısı sürüyor.")
         elif volx >= S["volume_spike_x"]:
-            sig.append(f"Olağandışı hacim ({volx:.1f}x)"); score += 1
+            if chg > 0:
+                bull += 1
+                notes.append(f"Normalin {volx:.1f} katı hacimle %{chg:.1f} yükseldi, yoğun alım var.")
+            else:
+                bear += 1
+                notes.append(f"Normalin {volx:.1f} katı hacimle %{abs(chg):.1f} düştü, yoğun satış var.")
+
+        if r.iloc[-2] >= S["rsi_low"] and r.iloc[-1] < S["rsi_low"]:
+            oversold = True
+            notes.append(f"Kısa sürede çok satıldı (RSI {r.iloc[-1]:.0f}). Tepki yükselişi gelebilir, ama önce düşüşün sebebine bak.")
+        if r.iloc[-2] <= S["rsi_high"] and r.iloc[-1] > S["rsi_high"]:
+            bear += 1
+            notes.append(f"Kısa sürede çok yükseldi (RSI {r.iloc[-1]:.0f}), kâr satışları gelebilir.")
+
+        score = bull + bear + (1 if oversold else 0)
         if score > 0 and t in insiders:
-            sig.append("👤 Son 14 günde yönetici alımı"); score += 2
+            bull += 2
+            score += 2
+            notes.append("Son 14 günde şirket yöneticisi kendi cebinden hisse aldı.")
+        if score < S["min_score"]:
+            continue
+        group = "rebound" if oversold else ("bull" if bull >= bear else "bear")
+        groups[group].append((score, abs(chg), t, c.iloc[-1], chg, notes))
 
-        if score >= S["min_score"]:
-            results.append((score, abs(chg), t, c.iloc[-1], chg, sig))
-
-    results.sort(key=lambda x: (x[0], x[1]), reverse=True)
-    print(f"Gün sonu: {len(results)} güçlü sinyal")
-    if not results:
+    total = sum(len(g) for g in groups.values())
+    print(f"Gün sonu: {total} güçlü sinyal")
+    if not total:
         return
-    lines = []
-    for i, (score, _, t, price, chg, sig) in enumerate(results[:S["eod_max"]], 1):
-        lines.append(f"{i}. {link(t)} {esc(names.get(t, ''))} ${price:,.2f} ({chg:+.1f}%)\n   "
-                     + " · ".join(sig))
-    notify(
-        f"📊 <b>Gün sonu teknik özet</b> ({last_date(next(iter(data.values())))})\n\n"
-        + "\n".join(lines)
-        + "\n\n<i>Sinyaller inceleme içindir, al/sat önerisi değildir.</i>",
-        silent=True,
-    )
+
+    titles = {
+        "bull": "🟢 <b>Alım ilgisi / yükseliş sinyali</b>",
+        "rebound": "🟡 <b>Sert düşüş sonrası tepki adayları</b>",
+        "bear": "🔴 <b>Satış baskısı / düşüş sinyali</b>",
+    }
+    parts = [f"📊 <b>Gün sonu özeti</b> ({tr_date(last_date(next(iter(data.values()))))})"]
+    for key in ("bull", "rebound", "bear"):
+        items = sorted(groups[key], key=lambda x: (x[0], x[1]), reverse=True)[:S["eod_group_max"]]
+        if not items:
+            continue
+        parts.append("\n" + titles[key])
+        for _, _, t, price, chg, notes in items:
+            parts.append(f"• {link(t)} {esc(names.get(t, ''))} ${price:,.2f} ({chg:+.1f}%)\n  " + " ".join(notes))
+    parts.append("\n<i>Bu liste bakmaya değer adayları gösterir, al/sat önerisi değildir.</i>")
+    notify("\n".join(parts)[:4000], silent=True)
+
+
+# ---------------------------------------------------------------- seans dışı
+REG, PRE, POST = (570, 960), (240, 570), (960, 1200)  # NY saatiyle dakika aralıkları
+
+
+def ext_download(tickers):
+    """15 dakikalık, seans dışını da içeren son 5 günlük veri."""
+    data = {}
+    for i in range(0, len(tickers), 100):
+        chunk = tickers[i:i + 100]
+        df = None
+        for attempt in range(3):
+            try:
+                df = yf.download(chunk, period="5d", interval="15m", prepost=True,
+                                 auto_adjust=False, group_by="column", threads=True, progress=False)
+                if df is not None and not df.empty:
+                    break
+            except Exception as ex:
+                print("Veri hatası:", ex, file=sys.stderr)
+            time.sleep(10 * (attempt + 1))
+        if df is None or df.empty:
+            continue
+        idx = df.index if df.index.tz is not None else df.index.tz_localize(NY)
+        df.index = idx.tz_convert(NY)
+        for t in chunk:
+            try:
+                sub = df.xs(t, axis=1, level=1)[["Close", "Volume"]].dropna(subset=["Close"])
+            except (KeyError, ValueError):
+                continue
+            if len(sub) > 10:
+                data[t] = sub
+        time.sleep(2)
+    print(f"{len(data)}/{len(tickers)} hissenin seans dışı verisi alındı")
+    if len(data) < 100:
+        raise RuntimeError("Yeterli seans dışı veri alınamadı (Yahoo erişim sorunu olabilir)")
+    return data
+
+
+def part(sub, day, rng):
+    idx = sub.index
+    mins = idx.hour * 60 + idx.minute
+    mask = (idx.date == day) & (mins >= rng[0]) & (mins < rng[1])
+    return sub[mask]
+
+
+def sessions(data):
+    """Normal seans verisi olan günler (örnek hisselerden)."""
+    sample = list(data.values())[:40]
+    days = sorted({d for sub in sample for d in set(sub.index.date)})
+    return [d for d in days if sum(len(part(sub, d, REG)) > 0 for sub in sample) >= 10]
+
+
+def fmt_shares(n):
+    return f"{n / 1e6:.1f} milyon" if n >= 1e6 else f"{n / 1e3:.0f} bin"
+
+
+def ext_report(title, rows, names, note):
+    S = SETTINGS
+    up = sorted([r for r in rows if r[1] > 0], key=lambda r: r[1], reverse=True)[:S["ext_max"]]
+    down = sorted([r for r in rows if r[1] < 0], key=lambda r: r[1])[:S["ext_max"]]
+    parts = [title]
+    for label, items in (("🟢 <b>Yükselenler</b>", up), ("🔴 <b>Düşenler</b>", down)):
+        if not items:
+            continue
+        parts.append("\n" + label)
+        for t, chg, price, vol in items:
+            extra = f", {fmt_shares(vol)} hisse işlem gördü" if vol > 0 else ""
+            parts.append(f"• {link(t)} {esc(names.get(t, ''))}: {chg:+.1f}% (${price:,.2f}){extra}")
+    parts.append(f"\n<i>{note}</i>")
+    notify("\n".join(parts)[:4000])
+
+
+def collect(data, day_base, day_ext, rng):
+    S = SETTINGS
+    rows = []
+    for t, sub in data.items():
+        reg, ext = part(sub, day_base, REG), part(sub, day_ext, rng)
+        if reg.empty or ext.empty:
+            continue
+        base, last = reg["Close"].iloc[-1], ext["Close"].iloc[-1]
+        vol = float(ext["Volume"].sum())
+        chg = (last / base - 1) * 100
+        if abs(chg) < S["ext_move_pct"]:
+            continue
+        if vol > 0 and vol * last < S["ext_min_dollar"]:
+            continue  # çok az işlemle oluşmuş, güvenilmez hareket
+        rows.append((t, chg, last, vol))
+    return rows
+
+
+NEWS_NOTE = ("Seans dışı sert hareketler çoğunlukla bilanço ya da önemli bir haberden kaynaklanır. "
+             "Hissenin adına tıklayıp haberleri görebilirsin.")
+
+
+def run_afterhours(state, sp, forced):
+    names = dict(sp)
+    data = ext_download(list(names))
+    days = sessions(data)
+    if not days:
+        print("Seans verisi bulunamadı")
+        return
+    day = days[-1]
+    if not forced and state.get("ah_date") == day.isoformat():
+        print("Bu günün kapanış sonrası raporu zaten gönderildi")
+        return
+    state["ah_date"] = day.isoformat()
+    rows = collect(data, day, day, POST)
+    print(f"Kapanış sonrası: {len(rows)} hareket")
+    if rows:
+        ext_report(f"🌙 <b>Kapanış sonrası hareketler</b> ({tr_date(day)} akşamı, kapanışa göre)",
+                   rows, names, NEWS_NOTE)
+
+
+def run_premarket(state, sp, forced):
+    names = dict(sp)
+    today = datetime.now(NY).date()
+    if not forced and state.get("pm_date") == today.isoformat():
+        print("Bugünün açılış öncesi raporu zaten gönderildi")
+        return
+    data = ext_download(list(names))
+    prev = [d for d in sessions(data) if d < today]
+    has_pre = sum(len(part(sub, today, PRE)) > 0 for sub in list(data.values())[:40]) >= 10
+    if not prev or not has_pre:
+        print("Bugün açılış öncesi işlem yok (tatil ya da hafta sonu olabilir)")
+        return
+    state["pm_date"] = today.isoformat()
+    rows = collect(data, prev[-1], today, PRE)
+    now = datetime.now(NY)
+    print(f"Açılış öncesi: {len(rows)} hareket")
+    if rows:
+        ext_report(f"🌅 <b>Açılış öncesi hareketler</b> (NY {now:%H:%M} itibarıyla, dünkü kapanışa göre)",
+                   rows, names, NEWS_NOTE)
 
 
 # ---------------------------------------------------------------- main
@@ -294,7 +468,13 @@ def main():
 
     try:
         sp = get_sp500(state)
-        if mode == "intraday" or (mode == "auto" and weekday and opens <= now < closes):
+        if mode == "afterhours":
+            run_afterhours(state, sp, forced=False)
+        elif mode == "premarket":
+            run_premarket(state, sp, forced=False)
+        elif mode in ("afterhours-now", "premarket-now"):
+            (run_afterhours if mode.startswith("after") else run_premarket)(state, sp, forced=True)
+        elif mode == "intraday" or (mode == "auto" and weekday and opens <= now < closes):
             run_intraday(state, sp, forced=(mode == "intraday"))
         elif mode == "eod" or (mode == "auto" and weekday and now >= closes + timedelta(minutes=10)
                                and state.get("eod_date") != now.date().isoformat()):
