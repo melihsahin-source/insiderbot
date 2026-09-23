@@ -457,11 +457,37 @@ def fmt_shares(n):
     return f"{n / 1e6:.1f} milyon" if n >= 1e6 else f"{n / 1e3:.0f} bin"
 
 
+def official_closes(tickers, day):
+    """Resmi günlük kapanış fiyatları {ticker: fiyat} (düzeltilmemiş Close)."""
+    out = {}
+    if not tickers:
+        return out
+    try:
+        df = yf.download(tickers, period="10d", interval="1d", auto_adjust=False,
+                         group_by="column", threads=True, progress=False)
+    except Exception as ex:
+        print("Resmi kapanışlar alınamadı:", ex, file=sys.stderr)
+        return out
+    if df is None or df.empty:
+        return out
+    for t in tickers:
+        try:
+            sub = df.xs(t, axis=1, level=1) if isinstance(df.columns, pd.MultiIndex) else df
+            c = sub["Close"].dropna()
+            hit = [v for ix, v in c.items() if pd.Timestamp(ix).date() == day]
+            if hit:
+                out[t] = float(hit[-1])
+        except (KeyError, ValueError):
+            continue
+    return out
+
+
 def collect(data, day_base, day_ext, rng):
     """Seans dışı hareketler. Tek bir sapkın işlemi elemek için son dilimlerin
-    medyan fiyatına bakılır ve hareketin birden fazla dilimde görülmesi istenir."""
+    medyan fiyatına bakılır, hareketin birden fazla dilimde görülmesi istenir ve
+    değişim resmi günlük kapanışa göre hesaplanır."""
     S = SETTINGS
-    rows = []
+    cands = []
     for t, sub in data.items():
         reg, ext = part(sub, day_base, REG), part(sub, day_ext, rng)
         if reg.empty or ext.empty:
@@ -472,12 +498,20 @@ def collect(data, day_base, day_ext, rng):
         base = reg["Close"].iloc[-1]
         last = float(traded["Close"].iloc[-3:].median())
         vol = float(ext["Volume"].sum())
-        chg = (last / base - 1) * 100
-        if abs(chg) < S["ext_move_pct"]:
+        if abs(last / base - 1) * 100 < S["ext_move_pct"] * 0.5:  # ön eleme
             continue
         if vol > 0 and vol * last < S["ext_min_dollar"]:
             continue  # çok az işlemle oluşmuş, güvenilmez hareket
-        rows.append((t, chg, last, vol))
+        cands.append((t, last, vol))
+
+    closes = official_closes([c[0] for c in cands], day_base)
+    rows = []
+    for t, last, vol in cands:
+        if t not in closes:
+            continue  # resmi kapanış yoksa hareketi doğrulayamayız, raporlama
+        chg = (last / closes[t] - 1) * 100
+        if abs(chg) >= S["ext_move_pct"]:
+            rows.append((t, chg, last, vol))
     return rows
 
 
