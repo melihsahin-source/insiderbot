@@ -424,7 +424,8 @@ def run_afterhours(state, sp, forced):
     if not forced and state.get("ah_date") == day.isoformat():
         print("Bu günün kapanış sonrası raporu zaten gönderildi")
         return
-    state["ah_date"] = day.isoformat()
+    if not forced:  # elle yapılan denemeler otomatik raporu engellemesin
+        state["ah_date"] = day.isoformat()
     rows = collect(data, day, day, POST)
     print(f"Kapanış sonrası: {len(rows)} hareket")
     if rows:
@@ -444,7 +445,8 @@ def run_premarket(state, sp, forced):
     if not prev or not has_pre:
         print("Bugün açılış öncesi işlem yok (tatil ya da hafta sonu olabilir)")
         return
-    state["pm_date"] = today.isoformat()
+    if not forced:
+        state["pm_date"] = today.isoformat()
     rows = collect(data, prev[-1], today, PRE)
     now = datetime.now(NY)
     print(f"Açılış öncesi: {len(rows)} hareket")
