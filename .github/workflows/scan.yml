@@ -4,13 +4,15 @@ on:
   schedule:
     - cron: "15,45 13-21 * * 1-5"   # gün içi tarama + gün sonu özeti (UTC)
     - cron: "0 6 * * 2-6"           # 09:00 İstanbul: kapanış sonrası raporu
-    - cron: "0 13 * * 1-5"          # 16:00 İstanbul: açılış öncesi raporu
+    - cron: "0 13 * * 1-5"          # 16:00 İstanbul: piyasa özeti + açılış öncesi
+    - cron: "0 6 * * 1"             # Pazartesi 09:00: haftanın bilanço takvimi
+    - cron: "0 7 * * 6"             # Cumartesi 10:00: sinyal karnesi
   workflow_dispatch:
     inputs:
       mode:
         description: "Çalışma modu"
         type: choice
-        options: [auto, test, intraday, eod, afterhours, premarket]
+        options: [auto, test, intraday, eod, afterhours, premarket, market, weekly, scorecard]
         default: auto
 
 permissions:
@@ -41,6 +43,8 @@ jobs:
             case "${{ github.event.schedule }}" in
               "0 6 * * 2-6")  MODE=afterhours ;;
               "0 13 * * 1-5") MODE=premarket ;;
+              "0 6 * * 1")    MODE=weekly ;;
+              "0 7 * * 6")    MODE=scorecard ;;
               *)              MODE=auto ;;
             esac
           elif [ "$MODE" = "afterhours" ] || [ "$MODE" = "premarket" ]; then
