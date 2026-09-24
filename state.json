@@ -2207,7 +2207,18 @@
   "0002058897-26-000316",
   "0002084606-26-000014",
   "0001213900-26-103146",
-  "0001213900-26-103145"
+  "0001213900-26-103145",
+  "0001769628-26-000435",
+  "0000947871-26-000887",
+  "0001769628-26-000434",
+  "0001193125-26-401317",
+  "0000947871-26-000886",
+  "0000947871-26-000885",
+  "0001950993-26-000006",
+  "0000947871-26-000884",
+  "0001104659-26-110505",
+  "0001104659-26-110504",
+  "0000947871-26-000883"
  ],
  "recent_buys": [
   {
@@ -2383,6 +2394,12 @@
    "owner": "Blackstone Private Multi-Asset Credit & Income Fund & Blackstone Private Credit Strategies LLC & Blackstone Intermediary Holdco L.L.C. & BLACKSTONE SECURITIES PARTNERS L.P. & Blackstone Advisory Services L.L.C. & Blackstone Private Real Estate Credit & Income Fund (Offshore Strategic Feeder Fund) L.P. & BREC Offshore Feeder GP, L.L.C.",
    "value": 5016661.57827,
    "at": "2026-09-24T23:08:34.071579+00:00"
+  },
+  {
+   "ticker": "HHH",
+   "owner": "GRANDISSON MARC",
+   "value": 1602937.5000000002,
+   "at": "2026-09-24T23:37:54.290401+00:00"
   }
  ],
  "seen_watch": {
@@ -2446,6 +2463,12 @@
    "t": "CRBG",
    "k": "insider",
    "p": 34.09
+  },
+  {
+   "d": "2026-09-24",
+   "t": "HHH",
+   "k": "insider",
+   "p": 64.58
   }
  ]
 }
