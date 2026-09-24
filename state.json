@@ -2204,7 +2204,10 @@
   "0001214659-26-011958",
   "0001999104-26-000010",
   "0001140361-26-037584",
-  "0002058897-26-000316"
+  "0002058897-26-000316",
+  "0002084606-26-000014",
+  "0001213900-26-103146",
+  "0001213900-26-103145"
  ],
  "recent_buys": [
   {
@@ -2368,6 +2371,18 @@
    "owner": "NIPPON LIFE INSURANCE CO",
    "value": 10185396.0788,
    "at": "2026-09-24T21:08:56.524707+00:00"
+  },
+  {
+   "ticker": "NONE",
+   "owner": "Blackstone Holdings IV L.P. & Blackstone Holdings IV GP L.P. & Blackstone Holdings IV GP Management (Delaware) L.P. & Blackstone Holdings IV GP Management L.L.C. & Blackstone Holdings I L.P. & Blackstone Holdings I/II GP L.L.C. & Blackstone Inc. & Blackstone Group Management L.L.C. & SCHWARZMAN STEPHEN A",
+   "value": 5016661.57827,
+   "at": "2026-09-24T23:08:34.071579+00:00"
+  },
+  {
+   "ticker": "NONE",
+   "owner": "Blackstone Private Multi-Asset Credit & Income Fund & Blackstone Private Credit Strategies LLC & Blackstone Intermediary Holdco L.L.C. & BLACKSTONE SECURITIES PARTNERS L.P. & Blackstone Advisory Services L.L.C. & Blackstone Private Real Estate Credit & Income Fund (Offshore Strategic Feeder Fund) L.P. & BREC Offshore Feeder GP, L.L.C.",
+   "value": 5016661.57827,
+   "at": "2026-09-24T23:08:34.071579+00:00"
   }
  ],
  "seen_watch": {
