@@ -2690,33 +2690,19 @@
    "t": "SNPS",
    "k": "pm_up",
    "p": 443.0
+  },
+  {
+   "d": "2026-09-25",
+   "t": "AKAM",
+   "k": "intra_up",
+   "p": 126.21
   }
  ],
  "pm_date": "2026-09-25",
  "intraday": {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "tickers": [
-   "A",
-   "AKAM",
-   "BE",
-   "CRH",
-   "CRL",
-   "FSLR",
-   "GDDY",
-   "GEN",
-   "ILMN",
-   "META",
-   "MGM",
-   "MRNA",
-   "ORCL",
-   "P",
-   "RCL",
-   "ROL",
-   "RVTY",
-   "SRE",
-   "WAT",
-   "WYNN",
-   "XYL"
+   "AKAM"
   ]
  }
 }
