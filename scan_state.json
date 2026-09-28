@@ -2894,17 +2894,52 @@
    "t": "COHR",
    "k": "intra_down",
    "p": 280.73
+  },
+  {
+   "d": "2026-09-28",
+   "t": "CRH",
+   "k": "intra_low",
+   "p": 83.23
+  },
+  {
+   "d": "2026-09-28",
+   "t": "INTC",
+   "k": "intra_down",
+   "p": 115.32
+  },
+  {
+   "d": "2026-09-28",
+   "t": "LITE",
+   "k": "intra_down",
+   "p": 889.485
+  },
+  {
+   "d": "2026-09-28",
+   "t": "SNDK",
+   "k": "intra_down",
+   "p": 1679.89
+  },
+  {
+   "d": "2026-09-28",
+   "t": "AMD",
+   "k": "intra_down",
+   "p": 598.0
   }
  ],
  "pm_date": "2026-09-28",
  "intraday": {
   "date": "2026-09-28",
   "tickers": [
+   "AMD",
    "BE",
    "COHR",
+   "CRH",
    "CVNA",
    "DASH",
-   "QCOM"
+   "INTC",
+   "LITE",
+   "QCOM",
+   "SNDK"
   ]
  }
 }
