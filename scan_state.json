@@ -2868,25 +2868,7 @@
  ],
  "pm_date": "2026-09-28",
  "intraday": {
-  "date": "2026-09-25",
-  "tickers": [
-   "AKAM",
-   "AMD",
-   "BE",
-   "DDOG",
-   "DELL",
-   "EFX",
-   "FLEX",
-   "GEN",
-   "GNRC",
-   "HUM",
-   "IT",
-   "JBL",
-   "MCHP",
-   "ON",
-   "P",
-   "PYPL",
-   "QCOM"
-  ]
+  "date": "2026-09-28",
+  "tickers": []
  }
 }
