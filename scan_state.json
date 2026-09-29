@@ -3092,17 +3092,31 @@
    "t": "FDS",
    "k": "intra_down",
    "p": 253.93
+  },
+  {
+   "d": "2026-09-29",
+   "t": "AMAT",
+   "k": "intra_up",
+   "p": 512.67
+  },
+  {
+   "d": "2026-09-29",
+   "t": "DASH",
+   "k": "intra_up",
+   "p": 187.38
   }
  ],
  "pm_date": "2026-09-29",
  "intraday": {
   "date": "2026-09-29",
   "tickers": [
+   "AMAT",
    "BE",
    "CBOE",
    "CCL",
    "COHR",
    "CVNA",
+   "DASH",
    "EFX",
    "FDS",
    "FICO",
