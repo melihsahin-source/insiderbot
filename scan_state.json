@@ -3176,14 +3176,28 @@
    "t": "HPE",
    "k": "intra_up",
    "p": 65.54
+  },
+  {
+   "d": "2026-09-30",
+   "t": "FICO",
+   "k": "intra_low",
+   "p": 595.02
+  },
+  {
+   "d": "2026-09-30",
+   "t": "NTAP",
+   "k": "intra_high",
+   "p": 212.79
   }
  ],
  "pm_date": "2026-09-30",
  "intraday": {
   "date": "2026-09-30",
   "tickers": [
+   "FICO",
    "HPE",
-   "MRNA"
+   "MRNA",
+   "NTAP"
   ]
  }
 }
