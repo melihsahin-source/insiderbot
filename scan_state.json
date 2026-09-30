@@ -3188,16 +3188,44 @@
    "t": "NTAP",
    "k": "intra_high",
    "p": 212.79
+  },
+  {
+   "d": "2026-09-30",
+   "t": "RVTY",
+   "k": "intra_high",
+   "p": 155.11
+  },
+  {
+   "d": "2026-09-30",
+   "t": "JBL",
+   "k": "intra_down",
+   "p": 293.51
+  },
+  {
+   "d": "2026-09-30",
+   "t": "GEN",
+   "k": "intra_up",
+   "p": 22.01
+  },
+  {
+   "d": "2026-09-30",
+   "t": "CBOE",
+   "k": "intra_up",
+   "p": 275.12
   }
  ],
  "pm_date": "2026-09-30",
  "intraday": {
   "date": "2026-09-30",
   "tickers": [
+   "CBOE",
    "FICO",
+   "GEN",
    "HPE",
+   "JBL",
    "MRNA",
-   "NTAP"
+   "NTAP",
+   "RVTY"
   ]
  }
 }
