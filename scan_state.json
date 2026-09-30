@@ -3224,6 +3224,18 @@
    "t": "SNPS",
    "k": "intra_up",
    "p": 439.81
+  },
+  {
+   "d": "2026-09-30",
+   "t": "WBD",
+   "k": "intra_high",
+   "p": 30.935
+  },
+  {
+   "d": "2026-09-30",
+   "t": "GIS",
+   "k": "intra_down",
+   "p": 32.0267
   }
  ],
  "pm_date": "2026-09-30",
@@ -3234,12 +3246,14 @@
    "CEG",
    "FICO",
    "GEN",
+   "GIS",
    "HPE",
    "JBL",
    "MRNA",
    "NTAP",
    "RVTY",
-   "SNPS"
+   "SNPS",
+   "WBD"
   ]
  }
 }
