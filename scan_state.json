@@ -3728,42 +3728,68 @@
    "t": "WDC",
    "k": "pm_down",
    "p": 426.607
+  },
+  {
+   "d": "2026-10-02",
+   "t": "APP",
+   "k": "intra_low",
+   "p": 271.94
+  },
+  {
+   "d": "2026-10-02",
+   "t": "NKE",
+   "k": "intra_low",
+   "p": 32.9286
+  },
+  {
+   "d": "2026-10-02",
+   "t": "STX",
+   "k": "intra_down",
+   "p": 807.2
+  },
+  {
+   "d": "2026-10-02",
+   "t": "WDC",
+   "k": "intra_down",
+   "p": 416.7
+  },
+  {
+   "d": "2026-10-02",
+   "t": "ON",
+   "k": "intra_up",
+   "p": 85.284
+  },
+  {
+   "d": "2026-10-02",
+   "t": "FICO",
+   "k": "intra_down",
+   "p": 619.84
+  },
+  {
+   "d": "2026-10-02",
+   "t": "HOOD",
+   "k": "intra_up",
+   "p": 117.6301
+  },
+  {
+   "d": "2026-10-02",
+   "t": "BE",
+   "k": "intra_up",
+   "p": 292.18
   }
  ],
  "pm_date": "2026-10-02",
  "intraday": {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "tickers": [
-   "ACN",
    "APP",
-   "CDNS",
-   "CDW",
-   "CIEN",
-   "CLX",
-   "COHR",
-   "CTSH",
-   "CTVA",
-   "CVNA",
+   "BE",
    "FICO",
-   "GEV",
-   "HD",
-   "IBM",
-   "INTU",
-   "IT",
-   "LITE",
-   "LOW",
-   "MCK",
-   "MKC",
-   "MPC",
+   "HOOD",
    "NKE",
-   "OTIS",
-   "PNR",
-   "PSKY",
-   "PTC",
-   "RDDT",
-   "SNPS",
-   "VLO",
-   "WY"
+   "ON",
+   "STX",
+   "WDC"
   ]
  }
 }
