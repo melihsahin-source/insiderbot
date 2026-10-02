@@ -3866,17 +3866,31 @@
    "t": "LITE",
    "k": "intra_high",
    "p": 1087.475
+  },
+  {
+   "d": "2026-10-02",
+   "t": "ECHO",
+   "k": "intra_up",
+   "p": 93.02
+  },
+  {
+   "d": "2026-10-02",
+   "t": "ACN",
+   "k": "intra_down",
+   "p": 201.51
   }
  ],
  "pm_date": "2026-10-02",
  "intraday": {
   "date": "2026-10-02",
   "tickers": [
+   "ACN",
    "AKAM",
    "AMD",
    "APP",
    "BE",
    "COHR",
+   "ECHO",
    "FICO",
    "HOOD",
    "HPE",
