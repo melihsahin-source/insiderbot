@@ -3812,12 +3812,31 @@
    "t": "MPWR",
    "k": "intra_up",
    "p": 1435.995
+  },
+  {
+   "d": "2026-10-02",
+   "t": "NTAP",
+   "k": "intra_high",
+   "p": 224.2786
+  },
+  {
+   "d": "2026-10-02",
+   "t": "NOC",
+   "k": "intra_low",
+   "p": 475.765
+  },
+  {
+   "d": "2026-10-02",
+   "t": "AKAM",
+   "k": "intra_up",
+   "p": 112.32
   }
  ],
  "pm_date": "2026-10-02",
  "intraday": {
   "date": "2026-10-02",
   "tickers": [
+   "AKAM",
    "AMD",
    "APP",
    "BE",
@@ -3827,6 +3846,8 @@
    "LULU",
    "MPWR",
    "NKE",
+   "NOC",
+   "NTAP",
    "NVDA",
    "ON",
    "STX",
