@@ -3962,37 +3962,39 @@
    "t": "VST",
    "k": "pm_up",
    "p": 144.79
+  },
+  {
+   "d": "2026-10-05",
+   "t": "PTC",
+   "k": "intra_up",
+   "p": 194.81
+  },
+  {
+   "d": "2026-10-05",
+   "t": "CHRW",
+   "k": "intra_down",
+   "p": 141.44
+  },
+  {
+   "d": "2026-10-05",
+   "t": "ADSK",
+   "k": "intra_up",
+   "p": 226.48
+  },
+  {
+   "d": "2026-10-05",
+   "t": "WDC",
+   "k": "intra_up",
+   "p": 439.3199
   }
  ],
  "pm_date": "2026-10-05",
  "intraday": {
-  "date": "2026-10-02",
+  "date": "2026-10-05",
   "tickers": [
-   "ACN",
-   "AKAM",
-   "AMD",
-   "APP",
-   "BE",
-   "COHR",
-   "CTVA",
-   "ECHO",
-   "FICO",
-   "HOOD",
-   "HPE",
-   "LITE",
-   "LULU",
-   "LVS",
-   "MCHP",
-   "MPWR",
-   "NKE",
-   "NOC",
-   "NTAP",
-   "NVDA",
-   "ON",
-   "STX",
-   "TER",
-   "TSLA",
-   "TXN",
+   "ADSK",
+   "CHRW",
+   "PTC",
    "WDC"
   ]
  }
