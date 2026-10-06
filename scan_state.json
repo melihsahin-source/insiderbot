@@ -4280,6 +4280,18 @@
    "t": "EME",
    "k": "intra_up",
    "p": 819.6
+  },
+  {
+   "d": "2026-10-06",
+   "t": "GLW",
+   "k": "intra_up",
+   "p": 167.86
+  },
+  {
+   "d": "2026-10-06",
+   "t": "NCLH",
+   "k": "intra_up",
+   "p": 15.625
   }
  ],
  "pm_date": "2026-10-06",
@@ -4296,10 +4308,12 @@
    "EME",
    "FTNT",
    "GEV",
+   "GLW",
    "GNRC",
    "ILMN",
    "MRNA",
    "MRVL",
+   "NCLH",
    "NRG",
    "NVDA",
    "PANW",
