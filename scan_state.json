@@ -4256,13 +4256,33 @@
    "t": "GNRC",
    "k": "intra_up",
    "p": 227.0
+  },
+  {
+   "d": "2026-10-06",
+   "t": "AMD",
+   "k": "intra_high",
+   "p": 648.448
+  },
+  {
+   "d": "2026-10-06",
+   "t": "CIEN",
+   "k": "intra_up",
+   "p": 418.7313
+  },
+  {
+   "d": "2026-10-06",
+   "t": "MRNA",
+   "k": "intra_down",
+   "p": 190.815
   }
  ],
  "pm_date": "2026-10-06",
  "intraday": {
   "date": "2026-10-06",
   "tickers": [
+   "AMD",
    "CEG",
+   "CIEN",
    "CRL",
    "CRWD",
    "CTVA",
@@ -4271,6 +4291,7 @@
    "GEV",
    "GNRC",
    "ILMN",
+   "MRNA",
    "MRVL",
    "NRG",
    "NVDA",
