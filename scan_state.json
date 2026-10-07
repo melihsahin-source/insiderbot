@@ -4394,11 +4394,26 @@
    "t": "LRCX",
    "k": "pm_down",
    "p": 323.64
+  },
+  {
+   "d": "2026-10-07",
+   "t": "LULU",
+   "k": "intra_low",
+   "p": 90.755
+  },
+  {
+   "d": "2026-10-07",
+   "t": "ALLE",
+   "k": "intra_down",
+   "p": 145.75
   }
  ],
  "pm_date": "2026-10-07",
  "intraday": {
   "date": "2026-10-07",
-  "tickers": []
+  "tickers": [
+   "ALLE",
+   "LULU"
+  ]
  }
 }
