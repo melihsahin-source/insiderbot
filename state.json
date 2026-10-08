@@ -1,19 +1,5 @@
 {
  "seen_form4": [
-  "0001628280-26-064465",
-  "0001628280-26-064464",
-  "0001628280-26-064463",
-  "0001628280-26-064462",
-  "0001628280-26-064461",
-  "0001628280-26-064460",
-  "0001628280-26-064459",
-  "0001133228-26-013088",
-  "0001628280-26-064458",
-  "0001193125-26-411764",
-  "0001133228-26-013086",
-  "0001193125-26-411763",
-  "0001491567-26-000011",
-  "0001918704-26-030326",
   "0001918704-26-030325",
   "0001133228-26-013085",
   "0001193125-26-411757",
@@ -5999,21 +5985,23 @@
   "0001859690-26-000188",
   "0001859690-26-000187",
   "0001859690-26-000186",
-  "0001821737-26-000016"
+  "0001821737-26-000016",
+  "0001610717-26-000434",
+  "0001193125-26-418184",
+  "0001887616-26-000024",
+  "0002090886-26-000010",
+  "0001887627-26-000012",
+  "0001887623-26-000021",
+  "0001780664-26-000037",
+  "0001820885-26-000025",
+  "0001193125-26-418179",
+  "0001193125-26-418176",
+  "0000789570-26-000099",
+  "0001193125-26-418171",
+  "0000789570-26-000098",
+  "0001193125-26-418168"
  ],
  "recent_buys": [
-  {
-   "ticker": "NONE",
-   "owner": "Blackstone Holdings IV L.P. & Blackstone Holdings IV GP L.P. & Blackstone Holdings IV GP Management (Delaware) L.P. & Blackstone Holdings IV GP Management L.L.C. & Blackstone Holdings I L.P. & Blackstone Holdings I/II GP L.L.C. & Blackstone Inc. & Blackstone Group Management L.L.C. & SCHWARZMAN STEPHEN A",
-   "value": 5016661.57827,
-   "at": "2026-09-24T23:08:34.071579+00:00"
-  },
-  {
-   "ticker": "NONE",
-   "owner": "Blackstone Private Multi-Asset Credit & Income Fund & Blackstone Private Credit Strategies LLC & Blackstone Intermediary Holdco L.L.C. & BLACKSTONE SECURITIES PARTNERS L.P. & Blackstone Advisory Services L.L.C. & Blackstone Private Real Estate Credit & Income Fund (Offshore Strategic Feeder Fund) L.P. & BREC Offshore Feeder GP, L.L.C.",
-   "value": 5016661.57827,
-   "at": "2026-09-24T23:08:34.071579+00:00"
-  },
   {
    "ticker": "HHH",
    "owner": "GRANDISSON MARC",
