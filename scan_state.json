@@ -4530,19 +4530,7 @@
  ],
  "pm_date": "2026-10-08",
  "intraday": {
-  "date": "2026-10-07",
-  "tickers": [
-   "ALLE",
-   "CAT",
-   "EME",
-   "FIX",
-   "HPE",
-   "LULU",
-   "MCHP",
-   "MOS",
-   "NRG",
-   "NTAP",
-   "TER"
-  ]
+  "date": "2026-10-08",
+  "tickers": []
  }
 }
