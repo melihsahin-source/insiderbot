@@ -4628,6 +4628,30 @@
    "t": "SWKS",
    "k": "intra_down",
    "p": 79.11
+  },
+  {
+   "d": "2026-10-08",
+   "t": "CSGP",
+   "k": "intra_up",
+   "p": 29.19
+  },
+  {
+   "d": "2026-10-08",
+   "t": "FLEX",
+   "k": "intra_down",
+   "p": 112.72
+  },
+  {
+   "d": "2026-10-08",
+   "t": "CIEN",
+   "k": "intra_down",
+   "p": 423.49
+  },
+  {
+   "d": "2026-10-08",
+   "t": "BBY",
+   "k": "intra_up",
+   "p": 88.92
   }
  ],
  "pm_date": "2026-10-08",
@@ -4636,10 +4660,14 @@
   "tickers": [
    "ACN",
    "APA",
+   "BBY",
    "BE",
    "CEG",
+   "CIEN",
    "CMG",
    "COHR",
+   "CSGP",
+   "FLEX",
    "GDDY",
    "GLW",
    "INTC",
