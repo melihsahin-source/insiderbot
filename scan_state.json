@@ -4874,14 +4874,34 @@
    "t": "CIEN",
    "k": "intra_up",
    "p": 448.01
+  },
+  {
+   "d": "2026-10-09",
+   "t": "AKAM",
+   "k": "intra_up",
+   "p": 107.9
+  },
+  {
+   "d": "2026-10-09",
+   "t": "ORCL",
+   "k": "intra_up",
+   "p": 142.7501
+  },
+  {
+   "d": "2026-10-09",
+   "t": "CEG",
+   "k": "intra_up",
+   "p": 299.78
   }
  ],
  "pm_date": "2026-10-09",
  "intraday": {
   "date": "2026-10-09",
   "tickers": [
+   "AKAM",
    "AMT",
    "CCI",
+   "CEG",
    "CHTR",
    "CIEN",
    "COHR",
@@ -4891,6 +4911,7 @@
    "HUM",
    "LITE",
    "MRNA",
+   "ORCL",
    "SBAC",
    "SWKS",
    "T",
