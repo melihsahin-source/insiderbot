@@ -4778,39 +4778,82 @@
    "t": "VZ",
    "k": "pm_down",
    "p": 43.13
+  },
+  {
+   "d": "2026-10-09",
+   "t": "HUM",
+   "k": "intra_high",
+   "p": 440.8836
+  },
+  {
+   "d": "2026-10-09",
+   "t": "TMUS",
+   "k": "intra_low",
+   "p": 155.72
+  },
+  {
+   "d": "2026-10-09",
+   "t": "CCI",
+   "k": "intra_up",
+   "p": 77.135
+  },
+  {
+   "d": "2026-10-09",
+   "t": "T",
+   "k": "intra_down",
+   "p": 22.685
+  },
+  {
+   "d": "2026-10-09",
+   "t": "SBAC",
+   "k": "intra_up",
+   "p": 183.11
+  },
+  {
+   "d": "2026-10-09",
+   "t": "VZ",
+   "k": "intra_down",
+   "p": 42.83
+  },
+  {
+   "d": "2026-10-09",
+   "t": "AMT",
+   "k": "intra_up",
+   "p": 178.73
+  },
+  {
+   "d": "2026-10-09",
+   "t": "COHR",
+   "k": "intra_up",
+   "p": 323.49
+  },
+  {
+   "d": "2026-10-09",
+   "t": "LITE",
+   "k": "intra_up",
+   "p": 1121.256
+  },
+  {
+   "d": "2026-10-09",
+   "t": "SWKS",
+   "k": "intra_down",
+   "p": 75.18
   }
  ],
  "pm_date": "2026-10-09",
  "intraday": {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "tickers": [
-   "ACN",
-   "APA",
-   "BBY",
-   "BE",
-   "CBOE",
-   "CEG",
-   "CIEN",
-   "CMG",
+   "AMT",
+   "CCI",
    "COHR",
-   "CSGP",
-   "CTSH",
-   "EXPE",
-   "FDS",
-   "FLEX",
-   "GDDY",
-   "GLW",
-   "INTC",
-   "IT",
-   "LDOS",
+   "HUM",
    "LITE",
-   "MPC",
-   "MRVL",
-   "ORCL",
-   "SMCI",
-   "SNDK",
+   "SBAC",
    "SWKS",
-   "VST"
+   "T",
+   "TMUS",
+   "VZ"
   ]
  }
 }
