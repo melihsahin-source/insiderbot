@@ -5096,6 +5096,12 @@
    "t": "AKAM",
    "k": "intra_down",
    "p": 101.345
+  },
+  {
+   "d": "2026-10-12",
+   "t": "CVNA",
+   "k": "intra_down",
+   "p": 60.31
   }
  ],
  "pm_date": "2026-10-12",
@@ -5107,6 +5113,7 @@
    "BIIB",
    "CIEN",
    "COHR",
+   "CVNA",
    "EBAY",
    "FICO",
    "GLW",
