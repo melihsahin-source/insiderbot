@@ -5018,36 +5018,40 @@
    "t": "CRM",
    "k": "pm_up",
    "p": 236.44
+  },
+  {
+   "d": "2026-10-12",
+   "t": "BIIB",
+   "k": "intra_high",
+   "p": 231.815
+  },
+  {
+   "d": "2026-10-12",
+   "t": "SNDK",
+   "k": "intra_down",
+   "p": 1486.9799
+  },
+  {
+   "d": "2026-10-12",
+   "t": "LITE",
+   "k": "intra_down",
+   "p": 1040.34
+  },
+  {
+   "d": "2026-10-12",
+   "t": "CIEN",
+   "k": "intra_down",
+   "p": 424.8038
   }
  ],
  "pm_date": "2026-10-12",
  "intraday": {
-  "date": "2026-10-09",
+  "date": "2026-10-12",
   "tickers": [
-   "AKAM",
-   "AMT",
-   "CCI",
-   "CEG",
-   "CHTR",
+   "BIIB",
    "CIEN",
-   "COHR",
-   "COIN",
-   "DDOG",
-   "FICO",
-   "HPQ",
-   "HUM",
-   "ILMN",
    "LITE",
-   "MOS",
-   "MRNA",
-   "ORCL",
-   "PANW",
-   "PLTR",
-   "SBAC",
-   "SWKS",
-   "T",
-   "TMUS",
-   "VZ"
+   "SNDK"
   ]
  }
 }
