@@ -5090,12 +5090,19 @@
    "t": "FICO",
    "k": "intra_up",
    "p": 701.62
+  },
+  {
+   "d": "2026-10-12",
+   "t": "AKAM",
+   "k": "intra_down",
+   "p": 101.345
   }
  ],
  "pm_date": "2026-10-12",
  "intraday": {
   "date": "2026-10-12",
   "tickers": [
+   "AKAM",
    "BE",
    "BIIB",
    "CIEN",
