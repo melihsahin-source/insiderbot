@@ -5042,15 +5042,36 @@
    "t": "CIEN",
    "k": "intra_down",
    "p": 424.8038
+  },
+  {
+   "d": "2026-10-12",
+   "t": "MOS",
+   "k": "intra_low",
+   "p": 18.475
+  },
+  {
+   "d": "2026-10-12",
+   "t": "BE",
+   "k": "intra_down",
+   "p": 262.09
+  },
+  {
+   "d": "2026-10-12",
+   "t": "COHR",
+   "k": "intra_down",
+   "p": 296.6
   }
  ],
  "pm_date": "2026-10-12",
  "intraday": {
   "date": "2026-10-12",
   "tickers": [
+   "BE",
    "BIIB",
    "CIEN",
+   "COHR",
    "LITE",
+   "MOS",
    "SNDK"
   ]
  }
