@@ -5264,6 +5264,18 @@
    "t": "ANET",
    "k": "intra_down",
    "p": 199.69
+  },
+  {
+   "d": "2026-10-13",
+   "t": "MU",
+   "k": "intra_down",
+   "p": 937.59
+  },
+  {
+   "d": "2026-10-13",
+   "t": "AMAT",
+   "k": "intra_down",
+   "p": 472.49
   }
  ],
  "pm_date": "2026-10-13",
@@ -5271,12 +5283,14 @@
   "date": "2026-10-13",
   "tickers": [
    "AAPL",
+   "AMAT",
    "ANET",
    "FLEX",
    "JNJ",
    "LII",
    "MA",
    "MSFT",
+   "MU",
    "STX",
    "VEEV",
    "WDC"
