@@ -5228,15 +5228,43 @@
    "t": "STX",
    "k": "intra_down",
    "p": 709.3
+  },
+  {
+   "d": "2026-10-13",
+   "t": "AAPL",
+   "k": "intra_high",
+   "p": 346.19
+  },
+  {
+   "d": "2026-10-13",
+   "t": "LII",
+   "k": "intra_low",
+   "p": 345.86
+  },
+  {
+   "d": "2026-10-13",
+   "t": "VEEV",
+   "k": "intra_high",
+   "p": 306.47
+  },
+  {
+   "d": "2026-10-13",
+   "t": "JNJ",
+   "k": "intra_down",
+   "p": 250.26
   }
  ],
  "pm_date": "2026-10-13",
  "intraday": {
   "date": "2026-10-13",
   "tickers": [
+   "AAPL",
+   "JNJ",
+   "LII",
    "MA",
    "MSFT",
    "STX",
+   "VEEV",
    "WDC"
   ]
  }
