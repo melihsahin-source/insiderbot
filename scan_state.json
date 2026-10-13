@@ -1,6 +1,6 @@
 {
  "sp500": {
-  "updated": "2026-10-06",
+  "updated": "2026-10-13",
   "list": [
    [
     "MMM",
@@ -513,10 +513,6 @@
    [
     "CPAY",
     "Corpay"
-   ],
-   [
-    "CTVA",
-    "Corteva"
    ],
    [
     "CSGP",
@@ -1435,10 +1431,6 @@
     "Palo Alto Networks"
    ],
    [
-    "PSKY",
-    "Paramount Skydance Corporation"
-   ],
-   [
     "PH",
     "Parker Hannifin"
    ],
@@ -1651,6 +1643,10 @@
     "Simon Property Group"
    ],
    [
+    "SKYD",
+    "Skydance Corporation"
+   ],
+   [
     "SWKS",
     "Skyworks Solutions"
    ],
@@ -1807,6 +1803,10 @@
     "Truist Financial"
    ],
    [
+    "TWLO",
+    "Twilio"
+   ],
+   [
     "TYL",
     "Tyler Technologies"
    ],
@@ -1915,6 +1915,10 @@
     "Vulcan Materials Company"
    ],
    [
+    "VYLR",
+    "Vylor"
+   ],
+   [
     "WRB",
     "W. R. Berkley Corporation"
    ],
@@ -1933,10 +1937,6 @@
    [
     "DIS",
     "Walt Disney Company (The)"
-   ],
-   [
-    "WBD",
-    "Warner Bros. Discovery"
    ],
    [
     "WM",
@@ -2017,7 +2017,7 @@
   ]
  },
  "eod_date": "2026-10-12",
- "ah_date": "2026-10-09",
+ "ah_date": "2026-10-12",
  "signal_log": [
   {
    "d": "2026-09-23",
@@ -5138,6 +5138,12 @@
    "t": "PLD",
    "k": "death",
    "p": 132.47
+  },
+  {
+   "d": "2026-10-12",
+   "t": "INCY",
+   "k": "ah_down",
+   "p": 107.0
   }
  ],
  "pm_date": "2026-10-12",
