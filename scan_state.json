@@ -5204,28 +5204,40 @@
    "t": "WDC",
    "k": "pm_down",
    "p": 357.9
+  },
+  {
+   "d": "2026-10-13",
+   "t": "MA",
+   "k": "intra_high",
+   "p": 600.32
+  },
+  {
+   "d": "2026-10-13",
+   "t": "MSFT",
+   "k": "intra_high",
+   "p": 549.77
+  },
+  {
+   "d": "2026-10-13",
+   "t": "WDC",
+   "k": "intra_down",
+   "p": 363.5
+  },
+  {
+   "d": "2026-10-13",
+   "t": "STX",
+   "k": "intra_down",
+   "p": 709.3
   }
  ],
  "pm_date": "2026-10-13",
  "intraday": {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "tickers": [
-   "AKAM",
-   "BE",
-   "BIIB",
-   "CIEN",
-   "CMG",
-   "COHR",
-   "CVNA",
-   "EBAY",
-   "FICO",
-   "GLW",
-   "HPE",
-   "LITE",
-   "MOS",
-   "MRNA",
-   "SMCI",
-   "SNDK"
+   "MA",
+   "MSFT",
+   "STX",
+   "WDC"
   ]
  }
 }
