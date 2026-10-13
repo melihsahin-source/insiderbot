@@ -5276,6 +5276,30 @@
    "t": "AMAT",
    "k": "intra_down",
    "p": 472.49
+  },
+  {
+   "d": "2026-10-13",
+   "t": "LRCX",
+   "k": "intra_down",
+   "p": 291.94
+  },
+  {
+   "d": "2026-10-13",
+   "t": "TER",
+   "k": "intra_down",
+   "p": 362.73
+  },
+  {
+   "d": "2026-10-13",
+   "t": "CAT",
+   "k": "intra_down",
+   "p": 757.3
+  },
+  {
+   "d": "2026-10-13",
+   "t": "KLAC",
+   "k": "intra_down",
+   "p": 180.36
   }
  ],
  "pm_date": "2026-10-13",
@@ -5285,13 +5309,17 @@
    "AAPL",
    "AMAT",
    "ANET",
+   "CAT",
    "FLEX",
    "JNJ",
+   "KLAC",
    "LII",
+   "LRCX",
    "MA",
    "MSFT",
    "MU",
    "STX",
+   "TER",
    "VEEV",
    "WDC"
   ]
