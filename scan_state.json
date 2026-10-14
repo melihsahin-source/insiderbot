@@ -5438,31 +5438,68 @@
    "t": "WAT",
    "k": "pm_up",
    "p": 442.65
+  },
+  {
+   "d": "2026-10-14",
+   "t": "MTD",
+   "k": "intra_high",
+   "p": 1612.78
+  },
+  {
+   "d": "2026-10-14",
+   "t": "SKYD",
+   "k": "intra_low",
+   "p": 7.175
+  },
+  {
+   "d": "2026-10-14",
+   "t": "PGR",
+   "k": "intra_down",
+   "p": 201.75
+  },
+  {
+   "d": "2026-10-14",
+   "t": "BAC",
+   "k": "intra_down",
+   "p": 49.8301
+  },
+  {
+   "d": "2026-10-14",
+   "t": "STT",
+   "k": "intra_down",
+   "p": 161.7
+  },
+  {
+   "d": "2026-10-14",
+   "t": "DELL",
+   "k": "intra_down",
+   "p": 532.77
+  },
+  {
+   "d": "2026-10-14",
+   "t": "ORCL",
+   "k": "intra_down",
+   "p": 134.07
+  },
+  {
+   "d": "2026-10-14",
+   "t": "SMCI",
+   "k": "intra_down",
+   "p": 37.075
   }
  ],
  "pm_date": "2026-10-14",
  "intraday": {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "tickers": [
-   "AAPL",
-   "AMAT",
-   "ANET",
-   "C",
-   "CAT",
-   "CDW",
-   "FLEX",
-   "JNJ",
-   "KLAC",
-   "LII",
-   "LRCX",
-   "MA",
-   "MSFT",
-   "MU",
-   "STX",
-   "TER",
-   "TTWO",
-   "VEEV",
-   "WDC"
+   "BAC",
+   "DELL",
+   "MTD",
+   "ORCL",
+   "PGR",
+   "SKYD",
+   "SMCI",
+   "STT"
   ]
  }
 }
