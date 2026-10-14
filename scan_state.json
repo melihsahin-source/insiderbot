@@ -5486,20 +5486,76 @@
    "t": "SMCI",
    "k": "intra_down",
    "p": 37.075
+  },
+  {
+   "d": "2026-10-14",
+   "t": "PHM",
+   "k": "intra_low",
+   "p": 107.385
+  },
+  {
+   "d": "2026-10-14",
+   "t": "AKAM",
+   "k": "intra_down",
+   "p": 93.44
+  },
+  {
+   "d": "2026-10-14",
+   "t": "GEV",
+   "k": "intra_down",
+   "p": 940.8
+  },
+  {
+   "d": "2026-10-14",
+   "t": "VST",
+   "k": "intra_down",
+   "p": 152.875
+  },
+  {
+   "d": "2026-10-14",
+   "t": "DASH",
+   "k": "intra_down",
+   "p": 182.685
+  },
+  {
+   "d": "2026-10-14",
+   "t": "HOOD",
+   "k": "intra_down",
+   "p": 104.635
+  },
+  {
+   "d": "2026-10-14",
+   "t": "P",
+   "k": "intra_down",
+   "p": 148.74
+  },
+  {
+   "d": "2026-10-14",
+   "t": "CVNA",
+   "k": "intra_down",
+   "p": 57.265
   }
  ],
  "pm_date": "2026-10-14",
  "intraday": {
   "date": "2026-10-14",
   "tickers": [
+   "AKAM",
    "BAC",
+   "CVNA",
+   "DASH",
    "DELL",
+   "GEV",
+   "HOOD",
    "MTD",
    "ORCL",
+   "P",
    "PGR",
+   "PHM",
    "SKYD",
    "SMCI",
-   "STT"
+   "STT",
+   "VST"
   ]
  }
 }
