@@ -5678,6 +5678,12 @@
    "t": "LRCX",
    "k": "intra_down",
    "p": 286.04
+  },
+  {
+   "d": "2026-10-14",
+   "t": "COIN",
+   "k": "intra_down",
+   "p": 172.295
   }
  ],
  "pm_date": "2026-10-14",
@@ -5692,6 +5698,7 @@
    "CEG",
    "CIEN",
    "COHR",
+   "COIN",
    "CVNA",
    "DASH",
    "DELL",
