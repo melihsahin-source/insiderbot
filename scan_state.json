@@ -5636,6 +5636,48 @@
    "t": "FIX",
    "k": "intra_down",
    "p": 1544.2
+  },
+  {
+   "d": "2026-10-14",
+   "t": "ON",
+   "k": "intra_down",
+   "p": 72.37
+  },
+  {
+   "d": "2026-10-14",
+   "t": "GLW",
+   "k": "intra_down",
+   "p": 140.3
+  },
+  {
+   "d": "2026-10-14",
+   "t": "ARE",
+   "k": "intra_down",
+   "p": 41.485
+  },
+  {
+   "d": "2026-10-14",
+   "t": "UAL",
+   "k": "intra_down",
+   "p": 97.765
+  },
+  {
+   "d": "2026-10-14",
+   "t": "PANW",
+   "k": "intra_down",
+   "p": 376.36
+  },
+  {
+   "d": "2026-10-14",
+   "t": "PWR",
+   "k": "intra_down",
+   "p": 653.43
+  },
+  {
+   "d": "2026-10-14",
+   "t": "LRCX",
+   "k": "intra_down",
+   "p": 286.04
   }
  ],
  "pm_date": "2026-10-14",
@@ -5644,6 +5686,7 @@
   "tickers": [
    "AKAM",
    "AMD",
+   "ARE",
    "BAC",
    "BE",
    "CEG",
@@ -5655,24 +5698,30 @@
    "FIX",
    "FLEX",
    "GEV",
+   "GLW",
    "GNRC",
    "HOOD",
    "HPE",
    "JBL",
    "LITE",
+   "LRCX",
    "MPWR",
    "MRVL",
    "MTD",
    "NRG",
    "NTAP",
+   "ON",
    "ORCL",
    "P",
+   "PANW",
    "PGR",
    "PHM",
+   "PWR",
    "SKYD",
    "SMCI",
    "STT",
    "TER",
+   "UAL",
    "VRT",
    "VST"
   ]
