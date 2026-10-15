@@ -6380,6 +6380,24 @@
    "t": "LULU",
    "k": "intra_up",
    "p": 98.85
+  },
+  {
+   "d": "2026-10-15",
+   "t": "BBY",
+   "k": "intra_up",
+   "p": 93.825
+  },
+  {
+   "d": "2026-10-15",
+   "t": "HONA",
+   "k": "intra_up",
+   "p": 164.63
+  },
+  {
+   "d": "2026-10-15",
+   "t": "CBRE",
+   "k": "intra_up",
+   "p": 135.33
   }
  ],
  "pm_date": "2026-10-15",
@@ -6394,10 +6412,12 @@
    "AMD",
    "ANET",
    "APP",
+   "BBY",
    "BE",
    "BIIB",
    "BRO",
    "CAT",
+   "CBRE",
    "CIEN",
    "COHR",
    "CPRT",
@@ -6418,6 +6438,7 @@
    "GIS",
    "GLW",
    "GNRC",
+   "HONA",
    "HOOD",
    "HPE",
    "IFF",
