@@ -6296,6 +6296,72 @@
    "t": "SKYD",
    "k": "intra_up",
    "p": 7.415
+  },
+  {
+   "d": "2026-10-15",
+   "t": "BIIB",
+   "k": "intra_high",
+   "p": 238.9
+  },
+  {
+   "d": "2026-10-15",
+   "t": "VEEV",
+   "k": "intra_high",
+   "p": 313.295
+  },
+  {
+   "d": "2026-10-15",
+   "t": "EXPE",
+   "k": "intra_up",
+   "p": 291.4
+  },
+  {
+   "d": "2026-10-15",
+   "t": "EBAY",
+   "k": "intra_up",
+   "p": 123.795
+  },
+  {
+   "d": "2026-10-15",
+   "t": "NOW",
+   "k": "intra_up",
+   "p": 147.95
+  },
+  {
+   "d": "2026-10-15",
+   "t": "NKE",
+   "k": "intra_up",
+   "p": 37.2958
+  },
+  {
+   "d": "2026-10-15",
+   "t": "ADSK",
+   "k": "intra_up",
+   "p": 244.165
+  },
+  {
+   "d": "2026-10-15",
+   "t": "ACN",
+   "k": "intra_up",
+   "p": 226.81
+  },
+  {
+   "d": "2026-10-15",
+   "t": "CPRT",
+   "k": "intra_up",
+   "p": 27.665
+  },
+  {
+   "d": "2026-10-15",
+   "t": "WDAY",
+   "k": "intra_up",
+   "p": 198.6951
+  },
+  {
+   "d": "2026-10-15",
+   "t": "RDDT",
+   "k": "intra_up",
+   "p": 156.12
   }
  ],
  "pm_date": "2026-10-15",
@@ -6303,23 +6369,29 @@
   "date": "2026-10-15",
   "tickers": [
    "ABBV",
+   "ACN",
+   "ADSK",
    "AJG",
    "AMAT",
    "AMD",
    "ANET",
    "APP",
    "BE",
+   "BIIB",
    "BRO",
    "CAT",
    "CIEN",
    "COHR",
+   "CPRT",
    "CSGP",
    "CTSH",
    "DELL",
+   "EBAY",
    "ECHO",
    "EFX",
    "EME",
    "ETN",
+   "EXPE",
    "FIX",
    "FLEX",
    "GEV",
@@ -6346,19 +6418,24 @@
    "MRSH",
    "MRVL",
    "MU",
+   "NKE",
+   "NOW",
    "NTAP",
    "P",
    "PFE",
    "PM",
    "PWR",
+   "RDDT",
    "SCHW",
    "SKYD",
    "SMCI",
    "SNDK",
    "STX",
    "TER",
+   "VEEV",
    "VRSK",
    "VRT",
+   "WDAY",
    "WDC",
    "WMB",
    "WTW"
