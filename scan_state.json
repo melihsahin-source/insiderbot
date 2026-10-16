@@ -6650,6 +6650,36 @@
    "t": "AKAM",
    "k": "intra_down",
    "p": 87.56
+  },
+  {
+   "d": "2026-10-16",
+   "t": "MU",
+   "k": "intra_down",
+   "p": 880.02
+  },
+  {
+   "d": "2026-10-16",
+   "t": "APP",
+   "k": "intra_down",
+   "p": 264.7
+  },
+  {
+   "d": "2026-10-16",
+   "t": "LITE",
+   "k": "intra_down",
+   "p": 824.625
+  },
+  {
+   "d": "2026-10-16",
+   "t": "TER",
+   "k": "intra_down",
+   "p": 325.76
+  },
+  {
+   "d": "2026-10-16",
+   "t": "UAL",
+   "k": "intra_down",
+   "p": 96.2012
   }
  ],
  "pm_date": "2026-10-16",
@@ -6658,6 +6688,7 @@
   "tickers": [
    "AKAM",
    "AMD",
+   "APP",
    "AXON",
    "BE",
    "CIEN",
@@ -6670,9 +6701,11 @@
    "HOOD",
    "HPE",
    "INTC",
+   "LITE",
    "MA",
    "MRNA",
    "MRVL",
+   "MU",
    "NOW",
    "P",
    "PANW",
@@ -6681,7 +6714,9 @@
    "SMCI",
    "SNDK",
    "STX",
+   "TER",
    "TWLO",
+   "UAL",
    "WDC"
   ]
  }
