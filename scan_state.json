@@ -6572,17 +6572,31 @@
    "t": "STX",
    "k": "intra_down",
    "p": 654.055
+  },
+  {
+   "d": "2026-10-16",
+   "t": "HPE",
+   "k": "intra_down",
+   "p": 55.32
+  },
+  {
+   "d": "2026-10-16",
+   "t": "CIEN",
+   "k": "intra_down",
+   "p": 338.02
   }
  ],
  "pm_date": "2026-10-16",
  "intraday": {
   "date": "2026-10-16",
   "tickers": [
+   "CIEN",
    "COHR",
    "CRWD",
    "DDOG",
    "FLEX",
    "FTNT",
+   "HPE",
    "MA",
    "MRNA",
    "P",
