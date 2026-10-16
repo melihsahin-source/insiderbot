@@ -6590,12 +6590,38 @@
    "t": "NOW",
    "k": "intra_down",
    "p": 141.0219
+  },
+  {
+   "d": "2026-10-16",
+   "t": "SKYD",
+   "k": "intra_down",
+   "p": 6.845
+  },
+  {
+   "d": "2026-10-16",
+   "t": "AXON",
+   "k": "intra_down",
+   "p": 394.805
+  },
+  {
+   "d": "2026-10-16",
+   "t": "BE",
+   "k": "intra_down",
+   "p": 224.055
+  },
+  {
+   "d": "2026-10-16",
+   "t": "INTC",
+   "k": "intra_down",
+   "p": 90.555
   }
  ],
  "pm_date": "2026-10-16",
  "intraday": {
   "date": "2026-10-16",
   "tickers": [
+   "AXON",
+   "BE",
    "CIEN",
    "COHR",
    "CRWD",
@@ -6603,12 +6629,14 @@
    "FLEX",
    "FTNT",
    "HPE",
+   "INTC",
    "MA",
    "MRNA",
    "NOW",
    "P",
    "PANW",
    "PLTR",
+   "SKYD",
    "SMCI",
    "STX",
    "TWLO",
