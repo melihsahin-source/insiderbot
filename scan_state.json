@@ -6614,30 +6614,72 @@
    "t": "INTC",
    "k": "intra_down",
    "p": 90.555
+  },
+  {
+   "d": "2026-10-16",
+   "t": "COIN",
+   "k": "intra_down",
+   "p": 170.42
+  },
+  {
+   "d": "2026-10-16",
+   "t": "SNDK",
+   "k": "intra_down",
+   "p": 1310.52
+  },
+  {
+   "d": "2026-10-16",
+   "t": "HOOD",
+   "k": "intra_down",
+   "p": 97.96
+  },
+  {
+   "d": "2026-10-16",
+   "t": "MRVL",
+   "k": "intra_down",
+   "p": 228.14
+  },
+  {
+   "d": "2026-10-16",
+   "t": "AMD",
+   "k": "intra_down",
+   "p": 532.1997
+  },
+  {
+   "d": "2026-10-16",
+   "t": "AKAM",
+   "k": "intra_down",
+   "p": 87.56
   }
  ],
  "pm_date": "2026-10-16",
  "intraday": {
   "date": "2026-10-16",
   "tickers": [
+   "AKAM",
+   "AMD",
    "AXON",
    "BE",
    "CIEN",
    "COHR",
+   "COIN",
    "CRWD",
    "DDOG",
    "FLEX",
    "FTNT",
+   "HOOD",
    "HPE",
    "INTC",
    "MA",
    "MRNA",
+   "MRVL",
    "NOW",
    "P",
    "PANW",
    "PLTR",
    "SKYD",
    "SMCI",
+   "SNDK",
    "STX",
    "TWLO",
    "WDC"
