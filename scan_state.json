@@ -6878,43 +6878,32 @@
    "t": "WDC",
    "k": "pm_up",
    "p": 342.42
+  },
+  {
+   "d": "2026-10-19",
+   "t": "CVX",
+   "k": "intra_high",
+   "p": 225.34
+  },
+  {
+   "d": "2026-10-19",
+   "t": "SNDK",
+   "k": "intra_up",
+   "p": 1384.2
+  },
+  {
+   "d": "2026-10-19",
+   "t": "WDC",
+   "k": "intra_up",
+   "p": 351.05
   }
  ],
  "pm_date": "2026-10-19",
  "intraday": {
-  "date": "2026-10-16",
+  "date": "2026-10-19",
   "tickers": [
-   "AKAM",
-   "AMD",
-   "APP",
-   "AXON",
-   "BE",
-   "CIEN",
-   "COHR",
-   "COIN",
-   "CRWD",
-   "DDOG",
-   "FLEX",
-   "FTNT",
-   "HOOD",
-   "HPE",
-   "INTC",
-   "LITE",
-   "MA",
-   "MRNA",
-   "MRVL",
-   "MU",
-   "NOW",
-   "P",
-   "PANW",
-   "PLTR",
-   "SKYD",
-   "SMCI",
+   "CVX",
    "SNDK",
-   "STX",
-   "TER",
-   "TWLO",
-   "UAL",
    "WDC"
   ]
  }
