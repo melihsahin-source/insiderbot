@@ -7136,12 +7136,19 @@
    "t": "SKYD",
    "k": "intra_up",
    "p": 7.15
+  },
+  {
+   "d": "2026-10-20",
+   "t": "ARE",
+   "k": "intra_up",
+   "p": 42.84
   }
  ],
  "pm_date": "2026-10-20",
  "intraday": {
   "date": "2026-10-20",
   "tickers": [
+   "ARE",
    "BRK-B",
    "CRL",
    "DVA",
