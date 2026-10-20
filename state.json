@@ -1,7 +1,5 @@
 {
  "seen_form4": [
-  "0001510281-26-000341",
-  "0001140361-26-039386",
   "0001918704-26-031238",
   "0001193125-26-419875",
   "0001999371-26-022604",
@@ -5999,15 +5997,11 @@
   "0001104659-26-117506",
   "0001040470-26-000309",
   "0001456823-26-000012",
-  "0000719955-26-000229"
+  "0000719955-26-000229",
+  "0001437749-26-033037",
+  "0001568238-26-000003"
  ],
  "recent_buys": [
-  {
-   "ticker": "SAH",
-   "owner": "Rusnak Paul P.",
-   "value": 1658698.56,
-   "at": "2026-10-06T23:08:15.613962+00:00"
-  },
   {
    "ticker": "LWAY",
    "owner": "Divisadero Street Capital Management, LP & Divisadero Street Partners GP, LLC & Zolezzi William & Divisadero Street Partners, L.P. & Divisadero Street Capital, LLC",
