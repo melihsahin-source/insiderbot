@@ -7430,6 +7430,18 @@
    "t": "NFLX",
    "k": "intra_down",
    "p": 65.215
+  },
+  {
+   "d": "2026-10-21",
+   "t": "DXCM",
+   "k": "intra_down",
+   "p": 80.07
+  },
+  {
+   "d": "2026-10-21",
+   "t": "ILMN",
+   "k": "intra_up",
+   "p": 283.075
   }
  ],
  "pm_date": "2026-10-21",
@@ -7440,8 +7452,10 @@
    "CRL",
    "DDOG",
    "DELL",
+   "DXCM",
    "ECHO",
    "HAS",
+   "ILMN",
    "NFLX",
    "SMCI",
    "T",
