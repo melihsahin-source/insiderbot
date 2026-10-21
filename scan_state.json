@@ -7370,34 +7370,47 @@
    "t": "WDC",
    "k": "pm_up",
    "p": 376.4433
+  },
+  {
+   "d": "2026-10-21",
+   "t": "HAS",
+   "k": "intra_high",
+   "p": 112.62
+  },
+  {
+   "d": "2026-10-21",
+   "t": "SMCI",
+   "k": "intra_up",
+   "p": 36.185
+  },
+  {
+   "d": "2026-10-21",
+   "t": "ECHO",
+   "k": "intra_up",
+   "p": 92.53
+  },
+  {
+   "d": "2026-10-21",
+   "t": "VRT",
+   "k": "intra_up",
+   "p": 215.02
+  },
+  {
+   "d": "2026-10-21",
+   "t": "DELL",
+   "k": "intra_up",
+   "p": 485.835
   }
  ],
  "pm_date": "2026-10-21",
  "intraday": {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "tickers": [
-   "ARE",
-   "BRK-B",
-   "CRL",
-   "DVA",
-   "EFX",
-   "GM",
-   "GPC",
+   "DELL",
+   "ECHO",
    "HAS",
-   "HLT",
-   "HWM",
-   "IT",
-   "KDP",
-   "LLY",
-   "LUV",
-   "MMM",
-   "MRNA",
-   "MSCI",
-   "NOC",
-   "PFE",
-   "SKYD",
-   "UAL",
-   "V"
+   "SMCI",
+   "VRT"
   ]
  }
 }
