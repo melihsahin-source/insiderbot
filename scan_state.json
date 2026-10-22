@@ -8432,6 +8432,42 @@
    "t": "FISV",
    "k": "intra_up",
    "p": 50.63
+  },
+  {
+   "d": "2026-10-22",
+   "t": "WAB",
+   "k": "intra_down",
+   "p": 272.84
+  },
+  {
+   "d": "2026-10-22",
+   "t": "BBY",
+   "k": "intra_up",
+   "p": 99.01
+  },
+  {
+   "d": "2026-10-22",
+   "t": "TWLO",
+   "k": "intra_down",
+   "p": 253.25
+  },
+  {
+   "d": "2026-10-22",
+   "t": "RSG",
+   "k": "intra_up",
+   "p": 241.89
+  },
+  {
+   "d": "2026-10-22",
+   "t": "SNPS",
+   "k": "intra_down",
+   "p": 428.53
+  },
+  {
+   "d": "2026-10-22",
+   "t": "CDNS",
+   "k": "intra_down",
+   "p": 309.73
   }
  ],
  "pm_date": "2026-10-22",
@@ -8445,11 +8481,13 @@
    "AME",
    "ANET",
    "APH",
+   "BBY",
    "BE",
    "BF-B",
    "BKR",
    "BX",
    "CAT",
+   "CDNS",
    "CEG",
    "CIEN",
    "COHR",
@@ -8514,18 +8552,22 @@
    "Q",
    "ROL",
    "ROP",
+   "RSG",
    "SMCI",
    "SNA",
    "SNDK",
+   "SNPS",
    "STLD",
    "STX",
    "TER",
    "TRV",
    "TSCO",
    "TT",
+   "TWLO",
    "VRSK",
    "VRT",
    "VST",
+   "WAB",
    "WDC"
   ]
  }
