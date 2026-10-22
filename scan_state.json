@@ -8468,19 +8468,82 @@
    "t": "CDNS",
    "k": "intra_down",
    "p": 309.73
+  },
+  {
+   "d": "2026-10-22",
+   "t": "IT",
+   "k": "intra_up",
+   "p": 231.71
+  },
+  {
+   "d": "2026-10-22",
+   "t": "ACN",
+   "k": "intra_up",
+   "p": 253.28
+  },
+  {
+   "d": "2026-10-22",
+   "t": "HPQ",
+   "k": "intra_up",
+   "p": 33.015
+  },
+  {
+   "d": "2026-10-22",
+   "t": "AWK",
+   "k": "intra_up",
+   "p": 141.82
+  },
+  {
+   "d": "2026-10-22",
+   "t": "AMZN",
+   "k": "intra_down",
+   "p": 248.7
+  },
+  {
+   "d": "2026-10-22",
+   "t": "DDOG",
+   "k": "intra_down",
+   "p": 258.875
+  },
+  {
+   "d": "2026-10-22",
+   "t": "PAYX",
+   "k": "intra_up",
+   "p": 118.335
+  },
+  {
+   "d": "2026-10-22",
+   "t": "NDSN",
+   "k": "intra_down",
+   "p": 314.77
+  },
+  {
+   "d": "2026-10-22",
+   "t": "CMI",
+   "k": "intra_down",
+   "p": 514.91
+  },
+  {
+   "d": "2026-10-22",
+   "t": "KR",
+   "k": "intra_up",
+   "p": 67.34
   }
  ],
  "pm_date": "2026-10-22",
  "intraday": {
   "date": "2026-10-22",
   "tickers": [
+   "ACN",
    "ADBE",
    "ALLE",
    "AMAT",
    "AMD",
    "AME",
+   "AMZN",
    "ANET",
    "APH",
+   "AWK",
    "BBY",
    "BE",
    "BF-B",
@@ -8490,11 +8553,13 @@
    "CDNS",
    "CEG",
    "CIEN",
+   "CMI",
    "COHR",
    "COIN",
    "CPRT",
    "CSGP",
    "CSX",
+   "DDOG",
    "DELL",
    "DHI",
    "ECHO",
@@ -8515,6 +8580,7 @@
    "HAS",
    "HOOD",
    "HPE",
+   "HPQ",
    "HUBB",
    "HWM",
    "ILMN",
@@ -8522,6 +8588,7 @@
    "INTU",
    "IR",
    "IRM",
+   "IT",
    "JBL",
    "JCI",
    "JKHY",
@@ -8529,6 +8596,7 @@
    "KEYS",
    "KHC",
    "KLAC",
+   "KR",
    "LEN",
    "LITE",
    "LMT",
@@ -8542,9 +8610,11 @@
    "MTD",
    "MU",
    "NDAQ",
+   "NDSN",
    "NRG",
    "ON",
    "P",
+   "PAYX",
    "PG",
    "PH",
    "PHM",
