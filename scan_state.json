@@ -1,6 +1,6 @@
 {
  "sp500": {
-  "updated": "2026-10-20",
+  "updated": "2026-10-27",
   "list": [
    [
     "MMM",
@@ -1519,20 +1519,20 @@
     "PulteGroup"
    ],
    [
-    "PWR",
-    "Quanta Services"
+    "Q",
+    "Qnity Electronics"
    ],
    [
     "QCOM",
     "Qualcomm"
    ],
    [
-    "DGX",
-    "Quest Diagnostics"
+    "PWR",
+    "Quanta Services"
    ],
    [
-    "Q",
-    "Qnity Electronics"
+    "DGX",
+    "Quest Diagnostics"
    ],
    [
     "RL",
@@ -1545,10 +1545,6 @@
    [
     "RDDT",
     "Reddit"
-   ],
-   [
-    "RTX",
-    "RTX Corporation"
    ],
    [
     "O",
@@ -1572,7 +1568,7 @@
    ],
    [
     "RMD",
-    "ResMed|"
+    "ResMed"
    ],
    [
     "RVTY",
@@ -1601,6 +1597,10 @@
    [
     "RCL",
     "Royal Caribbean Group"
+   ],
+   [
+    "RTX",
+    "RTX Corporation"
    ],
    [
     "SPGI",
@@ -1644,7 +1644,7 @@
    ],
    [
     "SKYD",
-    "Skydance Corporation"
+    "Skydance"
    ],
    [
     "SWKS",
@@ -2017,7 +2017,7 @@
   ]
  },
  "eod_date": "2026-10-26",
- "ah_date": "2026-10-23",
+ "ah_date": "2026-10-26",
  "signal_log": [
   {
    "d": "2026-09-23",
