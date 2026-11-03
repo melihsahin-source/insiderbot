@@ -1,6 +1,6 @@
 {
  "sp500": {
-  "updated": "2026-10-27",
+  "updated": "2026-11-03",
   "list": [
    [
     "MMM",
@@ -1503,12 +1503,12 @@
     "Prudential Financial"
    ],
    [
-    "PEG",
-    "Public Service Enterprise Group"
-   ],
-   [
     "PTC",
     "PTC Inc."
+   ],
+   [
+    "PEG",
+    "Public Service Enterprise Group"
    ],
    [
     "PSA",
@@ -2017,7 +2017,7 @@
   ]
  },
  "eod_date": "2026-11-02",
- "ah_date": "2026-10-30",
+ "ah_date": "2026-11-02",
  "signal_log": [
   {
    "d": "2026-09-23",
@@ -11822,6 +11822,12 @@
    "t": "WDC",
    "k": "death",
    "p": 338.59
+  },
+  {
+   "d": "2026-11-02",
+   "t": "BE",
+   "k": "ah_up",
+   "p": 203.17
   }
  ],
  "pm_date": "2026-11-02",
