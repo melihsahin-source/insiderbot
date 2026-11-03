@@ -12050,91 +12050,158 @@
    "t": "ZBRA",
    "k": "pm_down",
    "p": 311.59
+  },
+  {
+   "d": "2026-11-03",
+   "t": "VRSN",
+   "k": "intra_high",
+   "p": 314.35
+  },
+  {
+   "d": "2026-11-03",
+   "t": "IT",
+   "k": "intra_down",
+   "p": 203.66
+  },
+  {
+   "d": "2026-11-03",
+   "t": "FISV",
+   "k": "intra_up",
+   "p": 58.71
+  },
+  {
+   "d": "2026-11-03",
+   "t": "RVTY",
+   "k": "intra_up",
+   "p": 167.3
+  },
+  {
+   "d": "2026-11-03",
+   "t": "BE",
+   "k": "intra_up",
+   "p": 214.06
+  },
+  {
+   "d": "2026-11-03",
+   "t": "DD",
+   "k": "intra_up",
+   "p": 153.865
+  },
+  {
+   "d": "2026-11-03",
+   "t": "ZBRA",
+   "k": "intra_down",
+   "p": 329.38
+  },
+  {
+   "d": "2026-11-03",
+   "t": "SYY",
+   "k": "intra_down",
+   "p": 74.61
+  },
+  {
+   "d": "2026-11-03",
+   "t": "ADM",
+   "k": "intra_down",
+   "p": 69.93
+  },
+  {
+   "d": "2026-11-03",
+   "t": "ETN",
+   "k": "intra_up",
+   "p": 391.63
+  },
+  {
+   "d": "2026-11-03",
+   "t": "MPWR",
+   "k": "intra_up",
+   "p": 1328.5901
+  },
+  {
+   "d": "2026-11-03",
+   "t": "FOXA",
+   "k": "intra_up",
+   "p": 66.87
+  },
+  {
+   "d": "2026-11-03",
+   "t": "APP",
+   "k": "intra_up",
+   "p": 243.83
+  },
+  {
+   "d": "2026-11-03",
+   "t": "FIX",
+   "k": "intra_up",
+   "p": 1275.13
+  },
+  {
+   "d": "2026-11-03",
+   "t": "GEV",
+   "k": "intra_up",
+   "p": 915.46
+  },
+  {
+   "d": "2026-11-03",
+   "t": "FOX",
+   "k": "intra_up",
+   "p": 59.3
+  },
+  {
+   "d": "2026-11-03",
+   "t": "BALL",
+   "k": "intra_down",
+   "p": 64.12
+  },
+  {
+   "d": "2026-11-03",
+   "t": "LDOS",
+   "k": "intra_down",
+   "p": 135.915
+  },
+  {
+   "d": "2026-11-03",
+   "t": "COIN",
+   "k": "intra_up",
+   "p": 145.43
+  },
+  {
+   "d": "2026-11-03",
+   "t": "HWM",
+   "k": "intra_up",
+   "p": 224.165
+  },
+  {
+   "d": "2026-11-03",
+   "t": "LEN",
+   "k": "intra_down",
+   "p": 86.43
   }
  ],
  "pm_date": "2026-11-03",
  "intraday": {
-  "date": "2026-10-30",
+  "date": "2026-11-03",
   "tickers": [
-   "ADI",
-   "AKAM",
-   "AMAT",
-   "AMD",
-   "ANET",
-   "APH",
+   "ADM",
    "APP",
-   "AVGO",
-   "BBY",
+   "BALL",
    "BE",
-   "CBOE",
-   "CDNS",
-   "CDW",
-   "CIEN",
-   "COHR",
    "COIN",
-   "CRL",
-   "CRWD",
-   "CSGP",
-   "CTSH",
-   "DDOG",
-   "DELL",
+   "DD",
    "ETN",
-   "FCX",
-   "FDXF",
-   "FFIV",
+   "FISV",
    "FIX",
-   "FLEX",
-   "GDDY",
-   "GLW",
-   "GNRC",
-   "GPN",
-   "GS",
-   "HONA",
-   "HOOD",
-   "HPE",
-   "HPQ",
-   "IBKR",
-   "ILMN",
-   "INTC",
-   "IVZ",
-   "JBL",
-   "JCI",
-   "KDP",
-   "KEYS",
-   "KLAC",
-   "LITE",
-   "LLY",
-   "LRCX",
-   "MCHP",
-   "MRVL",
-   "MU",
-   "NEM",
-   "NOW",
-   "NTAP",
-   "NVDA",
-   "ON",
-   "ORCL",
-   "P",
-   "PLTR",
-   "Q",
-   "QCOM",
-   "RDDT",
-   "REGN",
-   "RMD",
+   "FOX",
+   "FOXA",
+   "GEV",
+   "HWM",
+   "IT",
+   "LDOS",
+   "LEN",
+   "MPWR",
    "RVTY",
-   "SMCI",
-   "SNDK",
-   "SNPS",
-   "STX",
-   "SYK",
-   "TER",
-   "TMUS",
-   "TWLO",
-   "TXN",
-   "TYL",
-   "VLTO",
-   "VRT",
-   "WDC",
+   "SYY",
+   "VRSN",
    "ZBRA"
   ]
  }
