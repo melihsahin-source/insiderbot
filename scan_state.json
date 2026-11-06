@@ -15152,128 +15152,215 @@
    "t": "WDC",
    "k": "pm_up",
    "p": 290.0
+  },
+  {
+   "d": "2026-11-06",
+   "t": "AXON",
+   "k": "intra_low",
+   "p": 317.115
+  },
+  {
+   "d": "2026-11-06",
+   "t": "COHR",
+   "k": "intra_up",
+   "p": 193.9
+  },
+  {
+   "d": "2026-11-06",
+   "t": "ABNB",
+   "k": "intra_up",
+   "p": 190.9901
+  },
+  {
+   "d": "2026-11-06",
+   "t": "APP",
+   "k": "intra_up",
+   "p": 397.185
+  },
+  {
+   "d": "2026-11-06",
+   "t": "NRG",
+   "k": "intra_up",
+   "p": 89.2052
+  },
+  {
+   "d": "2026-11-06",
+   "t": "VST",
+   "k": "intra_up",
+   "p": 124.83
+  },
+  {
+   "d": "2026-11-06",
+   "t": "AMD",
+   "k": "intra_up",
+   "p": 446.34
+  },
+  {
+   "d": "2026-11-06",
+   "t": "MCHP",
+   "k": "intra_down",
+   "p": 58.195
+  },
+  {
+   "d": "2026-11-06",
+   "t": "MRNA",
+   "k": "intra_up",
+   "p": 263.46
+  },
+  {
+   "d": "2026-11-06",
+   "t": "INTC",
+   "k": "intra_up",
+   "p": 56.6308
+  },
+  {
+   "d": "2026-11-06",
+   "t": "LRCX",
+   "k": "intra_up",
+   "p": 199.75
+  },
+  {
+   "d": "2026-11-06",
+   "t": "PWR",
+   "k": "intra_up",
+   "p": 547.235
+  },
+  {
+   "d": "2026-11-06",
+   "t": "CRL",
+   "k": "intra_up",
+   "p": 335.23
+  },
+  {
+   "d": "2026-11-06",
+   "t": "PODD",
+   "k": "intra_down",
+   "p": 145.14
+  },
+  {
+   "d": "2026-11-06",
+   "t": "ANET",
+   "k": "intra_up",
+   "p": 170.195
+  },
+  {
+   "d": "2026-11-06",
+   "t": "AKAM",
+   "k": "intra_up",
+   "p": 83.07
+  },
+  {
+   "d": "2026-11-06",
+   "t": "CNC",
+   "k": "intra_down",
+   "p": 69.39
+  },
+  {
+   "d": "2026-11-06",
+   "t": "QCOM",
+   "k": "intra_up",
+   "p": 166.845
+  },
+  {
+   "d": "2026-11-06",
+   "t": "Q",
+   "k": "intra_up",
+   "p": 117.1
+  },
+  {
+   "d": "2026-11-06",
+   "t": "SMCI",
+   "k": "intra_up",
+   "p": 28.66
+  },
+  {
+   "d": "2026-11-06",
+   "t": "ECHO",
+   "k": "intra_up",
+   "p": 94.96
+  },
+  {
+   "d": "2026-11-06",
+   "t": "IT",
+   "k": "intra_down",
+   "p": 186.97
+  },
+  {
+   "d": "2026-11-06",
+   "t": "KLAC",
+   "k": "intra_up",
+   "p": 137.04
+  },
+  {
+   "d": "2026-11-06",
+   "t": "DXCM",
+   "k": "intra_down",
+   "p": 79.85
+  },
+  {
+   "d": "2026-11-06",
+   "t": "MU",
+   "k": "intra_up",
+   "p": 691.38
+  },
+  {
+   "d": "2026-11-06",
+   "t": "KEYS",
+   "k": "intra_up",
+   "p": 274.1
+  },
+  {
+   "d": "2026-11-06",
+   "t": "CIEN",
+   "k": "intra_up",
+   "p": 242.52
+  },
+  {
+   "d": "2026-11-06",
+   "t": "MPWR",
+   "k": "intra_up",
+   "p": 1188.71
+  },
+  {
+   "d": "2026-11-06",
+   "t": "WYNN",
+   "k": "intra_up",
+   "p": 83.29
   }
  ],
  "pm_date": "2026-11-06",
  "intraday": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "tickers": [
-   "ADI",
+   "ABNB",
    "AKAM",
-   "AMAT",
-   "AMCR",
    "AMD",
-   "AME",
    "ANET",
-   "APH",
    "APP",
-   "APTV",
-   "AVGO",
    "AXON",
-   "BDX",
-   "BE",
-   "BEN",
-   "BKR",
-   "CAT",
-   "CCL",
-   "CDNS",
-   "CF",
    "CIEN",
-   "CMI",
+   "CNC",
    "COHR",
-   "COIN",
-   "CPAY",
-   "CRWD",
-   "CSCO",
-   "CVNA",
-   "DASH",
-   "DDOG",
-   "DELL",
-   "DLR",
-   "DLTR",
+   "CRL",
    "DXCM",
    "ECHO",
-   "EME",
-   "EQIX",
-   "ETN",
-   "EXPE",
-   "FCX",
-   "FERG",
-   "FFIV",
-   "FIX",
-   "FLEX",
-   "FTNT",
-   "GEV",
-   "GLW",
-   "GNRC",
-   "GS",
-   "HON",
-   "HOOD",
-   "HPE",
-   "HST",
-   "HWM",
-   "IBKR",
-   "ILMN",
    "INTC",
-   "IRM",
-   "IVZ",
-   "J",
-   "JBL",
-   "JCI",
+   "IT",
    "KEYS",
    "KLAC",
-   "LITE",
    "LRCX",
    "MCHP",
-   "MLM",
    "MPWR",
    "MRNA",
-   "MRVL",
-   "MS",
-   "MSI",
    "MU",
-   "NCLH",
-   "NDSN",
-   "NOW",
    "NRG",
-   "NTAP",
-   "NUE",
-   "NVDA",
-   "NWS",
-   "NWSA",
-   "ON",
-   "ORCL",
-   "P",
-   "PANW",
-   "PKG",
-   "PLTR",
    "PODD",
    "PWR",
    "Q",
    "QCOM",
-   "RDDT",
-   "RL",
-   "ROK",
-   "RVTY",
    "SMCI",
-   "SNDK",
-   "STLD",
-   "STX",
-   "TDY",
-   "TEL",
-   "TER",
-   "TPR",
-   "TSLA",
-   "TWLO",
-   "TXN",
-   "URI",
-   "VRSK",
-   "VRT",
    "VST",
-   "WAB",
-   "WDC",
-   "WMB",
-   "ZTS"
+   "WYNN"
   ]
  }
 }
