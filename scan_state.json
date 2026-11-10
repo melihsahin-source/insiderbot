@@ -1,6 +1,6 @@
 {
  "sp500": {
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "list": [
    [
     "MMM",
@@ -1079,10 +1079,6 @@
     "JPMorgan Chase"
    ],
    [
-    "KVUE",
-    "Kenvue"
-   ],
-   [
     "KDP",
     "Keurig Dr Pepper"
    ],
@@ -1389,6 +1385,10 @@
    [
     "OXY",
     "Occidental Petroleum"
+   ],
+   [
+    "OKTA",
+    "Okta, Inc."
    ],
    [
     "ODFL",
@@ -2017,7 +2017,7 @@
   ]
  },
  "eod_date": "2026-11-09",
- "ah_date": "2026-11-06",
+ "ah_date": "2026-11-09",
  "signal_log": [
   {
    "d": "2026-09-23",
@@ -15572,6 +15572,12 @@
    "t": "TER",
    "k": "death",
    "p": 246.0
+  },
+  {
+   "d": "2026-11-09",
+   "t": "TTWO",
+   "k": "ah_up",
+   "p": 216.37
   }
  ],
  "pm_date": "2026-11-09",
