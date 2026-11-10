@@ -15704,41 +15704,75 @@
    "t": "VST",
    "k": "pm_down",
    "p": 129.5
+  },
+  {
+   "d": "2026-11-10",
+   "t": "CHTR",
+   "k": "intra_up",
+   "p": 133.645
+  },
+  {
+   "d": "2026-11-10",
+   "t": "TTWO",
+   "k": "intra_up",
+   "p": 223.155
+  },
+  {
+   "d": "2026-11-10",
+   "t": "SKYD",
+   "k": "intra_down",
+   "p": 8.095
+  },
+  {
+   "d": "2026-11-10",
+   "t": "MRNA",
+   "k": "intra_down",
+   "p": 251.36
+  },
+  {
+   "d": "2026-11-10",
+   "t": "FSLR",
+   "k": "intra_down",
+   "p": 179.29
+  },
+  {
+   "d": "2026-11-10",
+   "t": "NVDA",
+   "k": "intra_down",
+   "p": 168.72
+  },
+  {
+   "d": "2026-11-10",
+   "t": "LEN",
+   "k": "intra_down",
+   "p": 86.765
+  },
+  {
+   "d": "2026-11-10",
+   "t": "GEV",
+   "k": "intra_down",
+   "p": 786.12
+  },
+  {
+   "d": "2026-11-10",
+   "t": "CVNA",
+   "k": "intra_down",
+   "p": 72.4
   }
  ],
  "pm_date": "2026-11-10",
  "intraday": {
-  "date": "2026-11-06",
+  "date": "2026-11-10",
   "tickers": [
-   "ABNB",
-   "AKAM",
-   "AMD",
-   "ANET",
-   "APP",
-   "AXON",
-   "CIEN",
-   "CNC",
-   "COHR",
-   "CRL",
-   "DXCM",
-   "ECHO",
-   "INTC",
-   "IT",
-   "KEYS",
-   "KLAC",
-   "LRCX",
-   "MCHP",
-   "MPWR",
+   "CHTR",
+   "CVNA",
+   "FSLR",
+   "GEV",
+   "LEN",
    "MRNA",
-   "MU",
-   "NRG",
-   "PODD",
-   "PWR",
-   "Q",
-   "QCOM",
-   "SMCI",
-   "VST",
-   "WYNN"
+   "NVDA",
+   "SKYD",
+   "TTWO"
   ]
  }
 }
