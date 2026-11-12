@@ -16448,41 +16448,75 @@
    "t": "WDC",
    "k": "pm_down",
    "p": 298.6838
+  },
+  {
+   "d": "2026-11-12",
+   "t": "GPN",
+   "k": "intra_down",
+   "p": 87.9175
+  },
+  {
+   "d": "2026-11-12",
+   "t": "SMCI",
+   "k": "intra_down",
+   "p": 27.205
+  },
+  {
+   "d": "2026-11-12",
+   "t": "KDP",
+   "k": "intra_down",
+   "p": 35.405
+  },
+  {
+   "d": "2026-11-12",
+   "t": "MRNA",
+   "k": "intra_down",
+   "p": 230.66
+  },
+  {
+   "d": "2026-11-12",
+   "t": "FIS",
+   "k": "intra_down",
+   "p": 28.415
+  },
+  {
+   "d": "2026-11-12",
+   "t": "UAL",
+   "k": "intra_down",
+   "p": 111.3562
+  },
+  {
+   "d": "2026-11-12",
+   "t": "RDDT",
+   "k": "intra_down",
+   "p": 99.625
+  },
+  {
+   "d": "2026-11-12",
+   "t": "AMD",
+   "k": "intra_up",
+   "p": 582.19
+  },
+  {
+   "d": "2026-11-12",
+   "t": "DAL",
+   "k": "intra_down",
+   "p": 86.57
   }
  ],
  "pm_date": "2026-11-12",
  "intraday": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "tickers": [
-   "AMAT",
-   "ANET",
-   "BE",
-   "CIEN",
-   "COHR",
-   "DELL",
+   "AMD",
+   "DAL",
    "FIS",
-   "GLW",
-   "GNRC",
-   "HPE",
-   "IBKR",
-   "INTC",
-   "KEYS",
-   "KLAC",
-   "LITE",
-   "LRCX",
-   "MPWR",
-   "MRVL",
-   "MU",
-   "ON",
-   "ORCL",
-   "P",
+   "GPN",
+   "KDP",
+   "MRNA",
    "RDDT",
    "SMCI",
-   "SNDK",
-   "STX",
-   "TER",
-   "VRT",
-   "WDC"
+   "UAL"
   ]
  }
 }
