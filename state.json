@@ -6003,66 +6003,6 @@
  ],
  "recent_buys": [
   {
-   "ticker": "BPRE",
-   "owner": "KAMFAR RAMIN",
-   "value": 2229725.1461,
-   "at": "2026-10-28T23:23:36.441822+00:00"
-  },
-  {
-   "ticker": "GOLD",
-   "owner": "Tether Global Investments Fund, S.I.C.A.F., S.A. & TPM, S.A. de C.V. & Devasini Giancarlo",
-   "value": 3927258.4300999995,
-   "at": "2026-10-28T23:23:36.441822+00:00"
-  },
-  {
-   "ticker": "HXL",
-   "owner": "KEATING NEAL J.",
-   "value": 242010.0,
-   "at": "2026-10-28T23:23:36.441822+00:00"
-  },
-  {
-   "ticker": "CRBG",
-   "owner": "NIPPON LIFE INSURANCE CO",
-   "value": 6390298.8954,
-   "at": "2026-10-28T23:23:36.441822+00:00"
-  },
-  {
-   "ticker": "LBRT",
-   "owner": "Babcock Ken",
-   "value": 223300.0,
-   "at": "2026-10-28T23:23:36.441822+00:00"
-  },
-  {
-   "ticker": "HBAN",
-   "owner": "ROLLINS JAMES D III",
-   "value": 253720.0,
-   "at": "2026-10-28T23:23:36.441822+00:00"
-  },
-  {
-   "ticker": "RCT",
-   "owner": "Senn Nikolaus Beat",
-   "value": 425000.0,
-   "at": "2026-10-28T23:23:36.441822+00:00"
-  },
-  {
-   "ticker": "TTMI",
-   "owner": "Roks Edwin",
-   "value": 440349.99999999994,
-   "at": "2026-10-29T02:37:30.803348+00:00"
-  },
-  {
-   "ticker": "TTMI",
-   "owner": "Ali Wajid",
-   "value": 902460.5,
-   "at": "2026-10-29T02:37:30.803348+00:00"
-  },
-  {
-   "ticker": "LONA",
-   "owner": "Portman David J.",
-   "value": 9919161280.9,
-   "at": "2026-10-29T02:37:30.803348+00:00"
-  },
-  {
    "ticker": "TFC",
    "owner": "Lyons Michael P.",
    "value": 1209050.0,
